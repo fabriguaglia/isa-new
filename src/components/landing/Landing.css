@@ -1,0 +1,623 @@
+/* ============================================
+   LandingHero — Instituto Santa Ana
+   ============================================ */
+
+.landing-hero {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* ---------- Carrusel ---------- */
+
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  height: 620px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-slide.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.35) 35%,
+    rgba(0, 0, 0, 0.15) 60%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ---------- Logo de Marca en Carrusel ---------- */
+
+.hero-brand-logo {
+  position: absolute;
+  right: 2.5rem;
+  bottom: 125px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.hero-brand-logo img {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4));
+}
+
+/* ---------- Texto y CTA ---------- */
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.hero-text {
+  max-width: 900px;
+  color: #ffffff;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.4);
+  white-space: nowrap;
+}
+
+.hero-subtitle {
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  opacity: 0.92;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 0.6rem 1.6rem;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+  border-radius: 4px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.hero-btn:hover {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+/* ---------- Flechas de navegación ---------- */
+
+.hero-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.hero-arrow:hover {
+  color: #ffffff;
+}
+
+.hero-arrow-prev {
+  left: 12px;
+}
+
+.hero-arrow-next {
+  right: 12px;
+}
+
+/* ---------- Indicadores (dots) ---------- */
+
+.hero-dots {
+  position: relative;
+  left: auto;
+  bottom: auto;
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 8px;
+  z-index: 3;
+}
+
+.hero-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-dot.is-active {
+  background-color: #ffffff;
+  transform: scale(1.2);
+}
+
+/* ---------- Galería inferior superpuesta ---------- */
+
+.hero-gallery-wrapper {
+  position: relative;
+  z-index: 4;
+}
+
+.hero-gallery {
+  margin-top: -110px;
+}
+
+.gallery-card {
+  position: relative;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  aspect-ratio: 4 / 3;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-card-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 1rem;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.3) 40%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.gallery-card:hover .gallery-card-overlay {
+  opacity: 1;
+}
+
+.gallery-card-text {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* ============================================
+   Sección de Tarjetas de Niveles
+   ============================================ */
+
+.niveles-section {
+  position: relative;
+  z-index: 1;
+  margin-top: 2rem;
+  padding: 0 0 3rem;
+  width: 100%;
+}
+
+.niveles-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
+}
+
+.nivel-card {
+  position: relative;
+  background-color: #F9F8F6;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.nivel-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.nivel-card-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.nivel-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.nivel-card:hover .nivel-card-img {
+  transform: scale(1.08) translateY(-3px);
+}
+
+.nivel-card-fade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(79, 119, 221, 0.95) 0%,
+    rgba(79, 119, 221, 0.6) 25%,
+    rgba(79, 119, 221, 0) 65%
+  );
+}
+
+.nivel-card-content {
+  position: relative;
+  z-index: 2;
+  padding: 1.25rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nivel-icon-circle {
+  width: 38px;
+  height: 38px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a1a1a;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nivel-title {
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================
+   Sección Educación del Futuro (Tech Section)
+   ============================================ */
+
+.tech-section {
+  position: relative;
+  width: 100%;
+  padding: 3rem 0 3.5rem;
+  background-color: #334779;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.tech-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--tech-bg-img);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tech-container {
+  position: relative;
+  z-index: 2;
+}
+
+.tech-main-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.tech-code-line {
+  display: block;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 0.2rem;
+}
+
+.tech-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+.tech-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.tech-card-caption {
+  position: absolute;
+  left: 0.85rem;
+  bottom: 0.75rem;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 0.95rem;
+  color: #ffffff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+  z-index: 2;
+}
+
+.tech-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%);
+  pointer-events: none;
+}
+
+.tech-description {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 1.20rem;
+  line-height: 1.5;
+  color: #ffffff;
+  max-width: 800px;
+  margin: 1.5rem auto 1rem;
+  font-weight: 400;
+  word-spacing: normal;
+}
+
+.tech-btn {
+  display: inline-block;
+  padding: 0.5rem 1.6rem;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  border: none;
+}
+
+.tech-btn:hover {
+  background-color: #f0f0f0;
+  color: #1a1a1a;
+  transform: translateY(-2px);
+}
+
+.tech-brand-logos {
+  position: absolute;
+  right: 1.5rem;
+  bottom: -2.2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tech-brand-img {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
+}
+
+/* ============================================
+   Responsive (Mobile)
+   ============================================ */
+
+@media (max-width: 767.98px) {
+  .landing-hero {
+    margin-bottom: 0;
+  }
+
+  .hero-carousel {
+    height: 75vw;
+    min-height: 300px;
+    max-height: 400px;
+  }
+
+  .hero-slide {
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .hero-brand-logo {
+    right: 1rem;
+    bottom: 40px;
+  }
+
+  .hero-brand-logo img {
+    height: 32px;
+  }
+
+  .hero-content {
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: 0.3rem;
+    white-space: normal;
+  }
+
+  .hero-subtitle {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-btn {
+    padding: 0.35rem 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  .hero-dots {
+    margin-top: 0.6rem;
+    gap: 5px;
+  }
+
+  .hero-dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .hero-arrow {
+    width: 28px;
+    height: 28px;
+  }
+
+  .hero-arrow-prev {
+    left: 4px;
+  }
+
+  .hero-arrow-next {
+    right: 4px;
+  }
+
+  .hero-gallery {
+    margin-top: -30px;
+  }
+
+  .gallery-card-overlay {
+    padding: 0.4rem;
+  }
+
+  .gallery-card-text {
+    font-size: 0.65rem;
+  }
+
+  .niveles-section {
+    margin-top: 1.25rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .niveles-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nivel-card {
+    min-width: 38vw;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    border-radius: 10px;
+  }
+
+  .nivel-card-content {
+    padding: 0.4rem 0.5rem;
+    gap: 0.35rem;
+  }
+
+  .nivel-icon-circle {
+    width: 22px;
+    height: 22px;
+  }
+
+  .nivel-icon-circle svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .nivel-title {
+    font-size: 0.75rem;
+  }
+
+  .tech-section {
+    padding: 2.5rem 0 3rem;
+  }
+
+  .tech-main-title {
+    font-size: 1.4rem;
+  }
+
+  .tech-code-line {
+    font-size: 1.15rem;
+  }
+
+  .tech-card-caption {
+    font-size: 0.8rem;
+    left: 0.6rem;
+    bottom: 0.6rem;
+  }
+
+  .tech-description {
+    font-size: 0.85rem;
+    padding: 0 0.5rem;
+    word-spacing: normal;
+  }
+
+  .tech-brand-logos {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1.5rem;
+  }
+
+  .tech-brand-img {
+    height: 42px;
+  }
+}
