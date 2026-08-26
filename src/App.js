@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Landing from "./components/landing/landing.jsx"
+import Landing from "./components/landing/Landing.jsx"
 import Header from "./components/header/header.jsx"
 
 function App() {
