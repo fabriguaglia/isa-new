@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import './Landing.css';
+import './landing.css';
 
 // Imágenes para el carrusel
 import Carrusel1 from '../assets/images/landing/carrusel-1.jpg';
