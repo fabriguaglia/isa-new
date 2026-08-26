@@ -13,7 +13,7 @@ const Header = () => {
     <header className="site-header">
       <div className="container header-container">
         {/* Logo */}
-        <a href="#" className="header-logo-link">
+        <a href="/" className="header-logo-link">
           <img src={Logo} alt="Instituto Santa Ana" className="header-logo" />
         </a>
 
