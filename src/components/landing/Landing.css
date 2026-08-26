@@ -455,8 +455,228 @@
 }
 
 /* ============================================
-   Responsive (Mobile)
+   Sección de Noticias / Experiencias
    ============================================ */
+
+.noticias-section {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding: 4rem 0;
+}
+
+.noticias-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.noticia-card {
+  position: relative;
+  background-color: #F9F8F6;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.noticia-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.noticia-card-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.noticia-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.noticia-card:hover .noticia-card-img {
+  transform: scale(1.08) translateY(-3px);
+}
+
+.noticia-card-fade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 35, 70, 0.95) 0%,
+    rgba(20, 35, 70, 0.7) 35%,
+    rgba(20, 35, 70, 0) 75%
+  );
+}
+
+.noticia-card-content {
+  position: relative;
+  z-index: 2;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  color: #ffffff;
+}
+
+.noticia-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+  line-height: 1.2;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.noticia-desc {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.noticia-btn {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0.3rem 0.8rem;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.75rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.noticia-btn:hover {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-color: #ffffff;
+}
+
+/* ============================================
+   Sección Convenios (Banner Rectangular)
+   ============================================ */
+
+.convenios-section {
+  width: 100%;
+  background-color: #1a1a1a;
+  overflow: hidden;
+  padding: 0; 
+}
+
+.convenios-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+}
+
+.convenios-track {
+  display: flex;
+  width: max-content;
+  animation: scrollConvenios 40s linear infinite;
+}
+
+.convenios-slider:hover .convenios-track {
+  animation-play-state: paused;
+}
+
+.convenio-card {
+  position: relative;
+  width: 240px;
+  height: 135px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-right: 1px solid rgba(255, 255, 255, 0.15); 
+}
+
+.convenio-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.convenio-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(26, 37, 70, 0.35);
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.convenio-card:hover .convenio-overlay {
+  background-color: rgba(26, 37, 70, 0.15);
+}
+
+.convenio-logo {
+  position: relative;
+  z-index: 3;
+  max-width: 65%;
+  max-height: 60%;
+  object-fit: contain;
+}
+
+@keyframes scrollConvenios {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ============================================
+   Estilo de la tarjeta dentro del Modal
+   ============================================ */
+.modal-convenio-preview {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+
+@media (max-width: 991.98px) {
+  .noticias-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 0.85rem;
+    padding-bottom: 0.75rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .noticia-card {
+    min-width: 65vw;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+}
 
 @media (max-width: 767.98px) {
   .landing-hero {
@@ -549,7 +769,7 @@
     padding-bottom: 1.5rem;
   }
 
-  .niveles-grid {
+  .niveles-grid, .noticias-grid {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -558,7 +778,8 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  .nivel-card {
+  .nivel-card, .noticia-card {
+    width: 38vw; 
     min-width: 38vw;
     scroll-snap-align: start;
     flex-shrink: 0;
@@ -583,7 +804,7 @@
   .nivel-title {
     font-size: 0.75rem;
   }
-
+  
   .tech-section {
     padding: 2.5rem 0 3rem;
   }
@@ -603,7 +824,7 @@
   }
 
   .tech-description {
-    font-size: 0.85rem;
+    font-size: 1.15rem;
     padding: 0 0.5rem;
     word-spacing: normal;
   }
@@ -619,5 +840,36 @@
 
   .tech-brand-img {
     height: 42px;
+  }
+
+  .noticias-section {
+    padding: 2.5rem 0;
+  }
+
+  .noticia-card-content {
+    padding: 0.5rem;
+  }
+
+  .noticia-title {
+    font-size: 0.75rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .noticia-desc {
+    font-size: 0.65rem;
+    margin-bottom: 0.4rem;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
+
+  .noticia-btn {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.6rem;
+    border-width: 1px;
+  }
+  
+  .convenio-card {
+    width: 160px;
+    height: 90px;
   }
 }

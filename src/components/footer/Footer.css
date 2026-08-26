@@ -1,0 +1,163 @@
+/* ============================================
+   Footer Component Styles
+   ============================================ */
+
+.site-footer {
+  width: 100%;
+  font-family: inherit;
+}
+
+/* ---------- Barra Superior de Redes (#D1D5D6) ---------- */
+.footer-social-bar {
+  background-color: #D1D5D6;
+  color: #1a1a1a;
+  padding: 2.2rem 0;
+  text-align: center;
+}
+
+.footer-social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-titles {
+  margin-bottom: 1.8rem;
+}
+
+.footer-social-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 0.25rem 0;
+  letter-spacing: -0.2px;
+}
+
+.footer-social-subtitle {
+  font-size: 0.85rem;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+.footer-social-items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.footer-social-item:hover {
+  transform: translateY(-3px);
+}
+
+.footer-icon-circle {
+  width: 38px;
+  height: 38px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a1a1a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 0.4rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.footer-social-item:hover .footer-icon-circle {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.footer-icon-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #2a2a2a;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Bloque Principal (#1d1d1d) ---------- */
+.footer-main-content {
+  background-color: #1d1d1d;
+  color: #f0f0f0;
+  padding: 3.5rem 0 1.5rem;
+}
+
+.footer-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  filter: brightness(0) invert(1);
+}
+
+.footer-brand-desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+  max-width: 300px;
+}
+
+.footer-heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links-list li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-links-list a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-links-list a:hover {
+  color: #ffffff;
+  padding-left: 4px;
+}
+
+.footer-bottom {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 767.98px) {
+  .footer-social-items {
+    gap: 1.25rem;
+  }
+  
+  .footer-main-content {
+    padding: 2.5rem 0 1rem;
+  }
+}
