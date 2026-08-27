@@ -657,6 +657,16 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+.modal-descripcion {
+  text-align: justify;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.modal-descripcion p {
+  margin-bottom: 1rem;
+}
+
 /* ============================================
    Responsive
    ============================================ */

@@ -170,31 +170,95 @@ const NOTICIAS = [
   {
     titulo: 'Puentes al Futuro',
     descripcion: 'Red de instituciones de educación superior que acompañan a nuestros egresados.',
-    imagen: Noticia3,
+    imagen: Noticia4,
     link: '#puentes',
   },
   {
     titulo: 'Propuesta Multilingüe',
     descripcion: 'Enseñanza oficial en español junto con el aprendizaje de varios idiomas.',
-    imagen: Noticia4,
+    imagen: Noticia3,
     link: '#multilingue',
   },
 ];
 
 const CONVENIOS = [
-  { bg: ConvenioBg1, logo: ConvenioLogo1, alt: 'Convenio 1', descripcion: 'Convenio marco de cooperación institucional orientado al desarrollo académico y profesional conjunto.' },
-  { bg: ConvenioBg2, logo: ConvenioLogo2, alt: 'Convenio 2', descripcion: 'Alianza estratégica para el acceso a beneficios y programas de formación especializada.' },
-  { bg: ConvenioBg3, logo: ConvenioLogo3, alt: 'Convenio 3', descripcion: 'Acuerdo de cooperación enfocado en proyectos tecnológicos y educativos.' },
-  { bg: ConvenioBg4, logo: ConvenioLogo4, alt: 'Convenio 4', descripcion: 'Programa de articulación y beneficios exclusivos para la comunidad educativa.' },
-  { bg: ConvenioBg5, logo: ConvenioLogo5, alt: 'Convenio 5', descripcion: 'Convenio de intercambio y actividades de extensión cultural y científica.' },
-  { bg: ConvenioBg6, logo: ConvenioLogo6, alt: 'Convenio 6', descripcion: 'Alianza institucional para el desarrollo de pasantías y prácticas profesionalizantes.' },
-  { bg: ConvenioBg7, logo: ConvenioLogo7, alt: 'Convenio 7', descripcion: 'Acuerdo de cooperación en áreas de innovación pedagógica y capacitación docente.' },
-  { bg: ConvenioBg8, logo: ConvenioLogo8, alt: 'Convenio 8', descripcion: 'Convenio de reciprocidad y beneficios preferenciales para estudiantes y plantel.' },
-  { bg: ConvenioBg9, logo: ConvenioLogo9, alt: 'Convenio 9', descripcion: 'Alianza estratégica orientada a la vinculación con el nivel superior y universitario.' },
-  { bg: ConvenioBg10, logo: ConvenioLogo10, alt: 'Convenio 10', descripcion: 'Acuerdo marco de cooperación institucional y desarrollo de proyectos comunes.' },
+  { 
+    bg: ConvenioBg1, 
+    logo: ConvenioLogo1, 
+    alt: 'Convenio Municipio de Tigre', 
+    descripcion: 'El Instituto Santa Ana mantiene una alianza estratégica con el **Municipio de Tigre**, generando un puente directo entre la institución educativa y la comunidad local.\n\nEste convenio posibilita el desarrollo de **visitas educativas** a espacios clave del partido, así como la implementación de **pasantías y prácticas profesionalizantes** en diversos sectores del municipio.\n\nDe esta manera, los estudiantes tienen la oportunidad de aplicar sus conocimientos en entornos reales, adquiriendo experiencia concreta que facilita su **inserción en el mundo laboral** y fortalece su compromiso con el entorno socio-productivo local.' 
+  },  
+  { 
+    bg: ConvenioBg2, 
+    logo: ConvenioLogo2, 
+    alt: 'Convenio Universidad de Cambridge', 
+    descripcion: 'El Instituto Santa Ana cuenta con un programa de **enseñanza avanzada de inglés**, consolidado a través de nuestra vinculación con los prestigiosos **Exámenes de Cambridge** (Cambridge University).\n\nEste acuerdo permite que la institución funcione como sede para la **visita de examinadores oficiales**, quienes se acercan al colegio para tomar las evaluaciones internacionales a nuestros estudiantes.\n\nDe esta forma, los alumnos tienen la oportunidad de certificar su nivel de proficiencia lingüística obteniendo reconocimientos oficiales de gran prestigio global, como las **certificaciones First** y las instancias correspondientes a etapas anteriores, potenciando su futuro académico y profesional.' 
+  },
+  { 
+    bg: ConvenioBg3, 
+    logo: ConvenioLogo3, 
+    alt: 'Convenio Modelo UNESCO', 
+    descripcion: 'El Instituto Santa Ana fomenta la participación activa de sus estudiantes en los **Modelos UNESCO**, simulaciones académicas donde los jóvenes replican los debates y el funcionamiento de los organismos internacionales de las Naciones Unidas.\n\nA través de esta experiencia, los alumnos representan a diferentes países y defienden posturas geopolíticas globales, abordando temáticas fundamentales como los **derechos humanos**, la **educación sostenible**, la **ciencia** y la **cultura**.\n\nEsta iniciativa estimula el pensamiento crítico, la capacidad de **oratoria y negociación**, la empatía intercultural y el compromiso con la **cooperación internacional** y la resolución pacífica de conflictos.' 
+  },  
+  { 
+    bg: ConvenioBg4, 
+    logo: ConvenioLogo4, 
+    alt: 'Convenio Global Studies', 
+    descripcion: 'El Instituto Santa Ana promueve experiencias de **aprendizaje internacional** a través de su alianza con **Global Studies**, facilitando el acceso a programas educativos en el exterior.\n\nEste convenio impulsa vivencias de **inmersión cultural y lingüística**, como los viajes de estudio a destinos emblemáticos como **Inglaterra**, diseñados para que los estudiantes perfeccionen el dominio del idioma en un entorno nativo.\n\nDe este modo, los alumnos combinan la formación académica con **excursiones culturales**, el desarrollo de la autonomía personal y una perspectiva global fundamental para su **crecimiento integral y profesional**.' 
+  },  
+  { 
+    bg: ConvenioBg5, 
+    logo: ConvenioLogo5, 
+    alt: 'Convenio 5', 
+    descripcion: 'El Instituto Santa Ana promueve diversas **acciones de articulación** con instituciones universitarias, con el propósito de acercar a nuestros estudiantes al **mundo académico y profesional**, acompañarlos en la construcción de su **proyecto de vida** y favorecer la continuidad de sus **estudios superiores**.\n\nEn este marco, se desarrollan convenios y propuestas con la **Universidad del Salvador (USAL)**, **Universidad de Flores**, **Universidad Austral**, **Universidad Torcuato Di Tella**, **Universidad de San Andrés**, **Universidad de Tres de Febrero (UNTREF)**, **Universidad Blas Pascal** y **Universidad Siglo 21**.\n\nLas propuestas incluyen **visitas a universidades**, **talleres de orientación vocacional**, actividades de acercamiento a la vida universitaria, competencias de alegatos, **Modelos de Naciones Unidas**, torneos deportivos y otras experiencias académicas y formativas.\n\nAsimismo, contamos con **programas de becas** para nuestros estudiantes junto con la **Universidad Torcuato Di Tella**, la **Universidad del Salvador** y la **Universidad Austral**, ampliando las oportunidades de acceso y continuidad.\n\nTambién se desarrollan instancias de **capacitación y actualización docente**, fortaleciendo el vínculo entre la escuela, la universidad y el mundo profesional.' 
+  },
+  { 
+    bg: ConvenioBg6, 
+    logo: ConvenioLogo6, 
+    alt: 'Convenio Buco S.A.', 
+    descripcion: 'El Instituto Santa Ana establece un importante vínculo con la reconocida empresa industrial **Buco S.A.**, orientada al desarrollo tecnológico y la fabricación de componentes para el sector agroindustrial.\n\nMediante esta alianza, la institución impulsa **pasantías y prácticas profesionalizantes** que permiten a los estudiantes sumergirse en el ámbito corporativo real, participando de diversas áreas operativas, de gestión y **administrativas**.\n\nEsta experiencia clave en el **mundo laboral** fomenta la aplicación práctica de los saberes teóricos, estimula el compromiso profesional y fortalece las capacidades de los jóvenes frente a las demandas del **entorno industrial y productivo actual**.' 
+  },  
+  { 
+    bg: ConvenioBg7, 
+    logo: ConvenioLogo7, 
+    alt: 'Convenio Schneider Electric', 
+    descripcion: 'El Instituto Santa Ana consolida una sólida alianza con **Schneider Electric**, líder global en la gestión de la energía y la automatización, integrando la innovación tecnológica directamente en la formación institucional.\n\nGracias a este vínculo, la empresa colabora activamente aportando **material tecnológico de vanguardia** para equipar los espacios de aprendizaje del colegio, permitiendo que los estudiantes practiquen con herramientas de última generación.\n\nAsimismo, el convenio habilita programas de **pasantías y prácticas profesionalizantes**, brindando a los alumnos la oportunidad de insertarse en entornos corporativos de alta exigencia y potenciar su desarrollo en el **ámbito técnico y profesional**.' 
+  },  
+  { 
+    bg: ConvenioBg8, 
+    logo: ConvenioLogo8, 
+    alt: 'Convenio Cisco', 
+    descripcion: 'El Instituto Santa Ana integra a su propuesta educativa los cursos y certificaciones oficiales de **Cisco Networking Academy**. A través de este convenio, nuestros estudiantes acceden a formación especializada en áreas clave de la tecnología actual, como **redes informáticas**, **ciberseguridad**, **sistemas operativos** y **administración de servidores**.\n\nEsta alianza estratégica permite a los alumnos obtener **certificaciones con validez internacional**, brindando herramientas prácticas y conocimientos técnicos altamente demandados en el mercado laboral, y preparándolos para los desafíos del **mundo digital y profesional**.' 
+  },  
+  { 
+    bg: ConvenioBg9, 
+    logo: ConvenioLogo9, 
+    alt: 'Convenio 9', 
+    descripcion: 'El Instituto Santa Ana promueve diversas **acciones de articulación** con instituciones universitarias, con el propósito de acercar a nuestros estudiantes al **mundo académico y profesional**, acompañarlos en la construcción de su **proyecto de vida** y favorecer la continuidad de sus **estudios superiores**.\n\nEn este marco, se desarrollan convenios y propuestas con la **Universidad del Salvador (USAL)**, **Universidad de Flores**, **Universidad Austral**, **Universidad Torcuato Di Tella**, **Universidad de San Andrés**, **Universidad de Tres de Febrero (UNTREF)**, **Universidad Blas Pascal** y **Universidad Siglo 21**.\n\nLas propuestas incluyen **visitas a universidades**, **talleres de orientación vocacional**, actividades de acercamiento a la vida universitaria, competencias de alegatos, **Modelos de Naciones Unidas**, torneos deportivos y otras experiencias académicas y formativas.\n\nAsimismo, contamos con **programas de becas** para nuestros estudiantes junto con la **Universidad Torcuato Di Tella**, la **Universidad del Salvador** y la **Universidad Austral**, ampliando las oportunidades de acceso y continuidad.\n\nTambién se desarrollan instancias de **capacitación y actualización docente**, fortaleciendo el vínculo entre la escuela, la universidad y el mundo profesional.' 
+  },
+  { 
+    bg: ConvenioBg10, 
+    logo: ConvenioLogo10, 
+    alt: 'Convenio 10', 
+    descripcion: 'El Instituto Santa Ana promueve diversas **acciones de articulación** con instituciones universitarias, con el propósito de acercar a nuestros estudiantes al **mundo académico y profesional**, acompañarlos en la construcción de su **proyecto de vida** y favorecer la continuidad de sus **estudios superiores**.\n\nEn este marco, se desarrollan convenios y propuestas con la **Universidad del Salvador (USAL)**, **Universidad de Flores**, **Universidad Austral**, **Universidad Torcuato Di Tella**, **Universidad de San Andrés**, **Universidad de Tres de Febrero (UNTREF)**, **Universidad Blas Pascal** y **Universidad Siglo 21**.\n\nLas propuestas incluyen **visitas a universidades**, **talleres de orientación vocacional**, actividades de acercamiento a la vida universitaria, competencias de alegatos, **Modelos de Naciones Unidas**, torneos deportivos y otras experiencias académicas y formativas.\n\nAsimismo, contamos con **programas de becas** para nuestros estudiantes junto con la **Universidad Torcuato Di Tella**, la **Universidad del Salvador** y la **Universidad Austral**, ampliando las oportunidades de acceso y continuidad.\n\nTambién se desarrollan instancias de **capacitación y actualización docente**, fortaleciendo el vínculo entre la escuela, la universidad y el mundo profesional.' 
+  },
 ];
 
 const AUTOPLAY_MS = 6000;
+
+// Función auxiliar para parsear **negrita** de forma limpia
+const renderConNegritas = (texto) => {
+  return texto.split('\n\n').map((parrafo, i) => {
+    const partes = parrafo.split(/\*\*(.*?)\*\*/g);
+    return (
+      <p key={i} className="mb-3">
+        {partes.map((parte, j) => (
+          j % 2 === 1 ? <strong key={j}>{parte}</strong> : parte
+        ))}
+      </p>
+    );
+  });
+};
 
 const Landing = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -416,7 +480,7 @@ const Landing = () => {
         </div>
       </section>
 
-      {/* ---------- Modal / Cartel con el BG y Overlay idénticos al Banner ---------- */}
+      {/* ---------- Modal / Cartel con el BG, Overlay y Texto Justificado ---------- */}
       {convenioSeleccionado && (
         <div className="modal fade show d-block" tabIndex="-1" style={{ backgroundColor: 'rgba(0,0,0,0.6)' }}>
           <div className="modal-dialog modal-dialog-centered">
@@ -431,13 +495,16 @@ const Landing = () => {
                 />
               </div>
               <div className="modal-body text-center">
-                {/* Contenedor con la misma estructura visual del banner */}
                 <div className="modal-convenio-preview mb-3">
                   <img src={convenioSeleccionado.bg} alt="Fondo convenio" className="convenio-bg" />
                   <div className="convenio-overlay" />
                   <img src={convenioSeleccionado.logo} alt={convenioSeleccionado.alt} className="convenio-logo" />
                 </div>
-                <p className="text-muted">{convenioSeleccionado.descripcion}</p>
+                
+                {/* Texto procesado con justificación y negritas */}
+                <div className="text-muted modal-descripcion">
+                  {renderConNegritas(convenioSeleccionado.descripcion)}
+                </div>
               </div>
               <div className="modal-footer border-0 justify-content-center">
                 <button 
