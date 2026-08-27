@@ -105,7 +105,44 @@
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.5;
+  margin-bottom: 1.2rem;
   max-width: 300px;
+}
+
+/* Estilos para contacto y dirección en la columna izquierda */
+.footer-contact-info {
+  margin-bottom: 1.2rem;
+}
+
+.footer-contact-item {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.footer-contact-item strong {
+  color: #ffffff;
+}
+
+.footer-contact-item a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-contact-item a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Contenedor del mapa integrado */
+.footer-map-container {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .footer-heading {
@@ -159,5 +196,9 @@
   
   .footer-main-content {
     padding: 2.5rem 0 1rem;
+  }
+
+  .footer-map-container {
+    max-width: 100%;
   }
 }

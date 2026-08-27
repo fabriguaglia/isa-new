@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "titulo": "Salidas Educativas",
+    "fecha": "Actualidad",
+    "resumen": "Experiencias en campo y visitas que llevan el aprendizaje más allá del aula.",
+    "contenido": "Las salidas educativas brindan a nuestros estudiantes experiencias directas en campo y visitas guiadas, permitiéndoles conectar los contenidos teóricos con la realidad y llevar el aprendizaje mucho más allá de los límites del aula.",
+    "imagenKey": "noticia1"
+  },
+  {
+    "id": 2,
+    "titulo": "Competencias Escolares",
+    "fecha": "Actualidad",
+    "resumen": "Desafíos académicos y torneos que potencian la superación.",
+    "contenido": "A través de desafíos académicos, olimpiadas y torneos, promovemos la participación de nuestros estudiantes en competencias escolares que potencian el esfuerzo, el trabajo en equipo y la superación personal.",
+    "imagenKey": "noticia2"
+  },
+  {
+    "id": 3,
+    "titulo": "Puentes al Futuro",
+    "fecha": "Actualidad",
+    "resumen": "Red de instituciones de educación superior que acompañan a nuestros egresados.",
+    "contenido": "El programa Puentes al Futuro consolida una sólida red de articulación con instituciones de educación superior y universidades prestigiosas, diseñando trayectos que acompañan de cerca a nuestros egresados en su transición al mundo académico.",
+    "imagenKey": "noticia4"
+  },
+  {
+    "id": 4,
+    "titulo": "Propuesta Multilingüe",
+    "fecha": "Actualidad",
+    "resumen": "Enseñanza oficial en español junto con el aprendizaje de varios idiomas.",
+    "contenido": "Nuestra propuesta multilingüe combina la sólida formación oficial en español con el aprendizaje estructurado de varios idiomas, preparando a los alumnos con herramientas globales de comunicación para un mundo interconectado.",
+    "imagenKey": "noticia3"
+  }
+]

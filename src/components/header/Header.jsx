@@ -1,12 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './Header.css';
 import Logo from '../assets/images/logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleDropdown = (e) => {
+    e.preventDefault();
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  // Cierra el menú desplegable si se hace clic fuera de él en escritorio
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+    setIsDropdownOpen(false);
   };
 
   return (
@@ -33,27 +56,57 @@ const Header = () => {
         <nav className={`header-nav ${isMenuOpen ? 'is-open' : ''}`}>
           <ul className="nav-list">
             <li className="nav-item">
-              <a href="#sobre-nosotros" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+              <a href="nosotros" className="nav-link" onClick={handleLinkClick}>
                 Sobre nosotros
               </a>
             </li>
-            <li className="nav-item">
-              <a href="#niveles" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+
+            {/* Dropdown de Niveles */}
+            <li className={`nav-item nav-dropdown ${isDropdownOpen ? 'is-open' : ''}`} ref={dropdownRef}>
+              <a href="#niveles" className="nav-link dropdown-toggle" onClick={toggleDropdown}>
                 Niveles
               </a>
+              <ul className="dropdown-menu-custom">
+                <li>
+                  <a href="/maternal" className="dropdown-link" onClick={handleLinkClick}>
+                    Maternal
+                  </a>
+                </li>
+                <li>
+                  <a href="/inicial" className="dropdown-link" onClick={handleLinkClick}>
+                    Inicial
+                  </a>
+                </li>
+                <li>
+                  <a href="/primario" className="dropdown-link" onClick={handleLinkClick}>
+                    Primario
+                  </a>
+                </li>
+                <li>
+                  <a href="/secundario" className="dropdown-link" onClick={handleLinkClick}>
+                    Secundario
+                  </a>
+                </li>
+                <li>
+                  <a href="/terciario" className="dropdown-link" onClick={handleLinkClick}>
+                    Terciario
+                  </a>
+                </li>
+              </ul>
             </li>
+
             <li className="nav-item">
-              <a href="#noticias" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+              <a href="/noticias" className="nav-link" onClick={handleLinkClick}>
                 Noticias
               </a>
             </li>
             <li className="nav-item">
-              <a href="#contacto" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+              <a href="/contacto" className="nav-link" onClick={handleLinkClick}>
                 Contacto
               </a>
             </li>
             <li className="nav-item">
-              <a href="#admisiones" className="nav-link nav-link-highlight" onClick={() => setIsMenuOpen(false)}>
+              <a href="/admisiones" className="nav-link nav-link-highlight" onClick={handleLinkClick}>
                 Admisiones
               </a>
             </li>

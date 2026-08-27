@@ -60,6 +60,29 @@ import ConvenioBg9 from '../assets/images/landing/convenios/bg-9.png';
 import ConvenioLogo9 from '../assets/images/landing/convenios/logo-9.png';
 import ConvenioBg10 from '../assets/images/landing/convenios/bg-21.png';
 import ConvenioLogo10 from '../assets/images/landing/convenios/logo-21.png';
+import ConvenioBg11 from '../assets/images/landing/convenios/bg-22.png';
+import ConvenioLogo11 from '../assets/images/landing/convenios/logo-22.png';
+
+import noticiasData from '../../data/noticias.json';
+
+// Diccionario para vincular las imágenes de noticias importadas arriba
+const imagenesNoticiasMap = {
+  noticia1: Noticia1,
+  noticia2: Noticia2,
+  noticia3: Noticia3,
+  noticia4: Noticia4,
+};
+
+// Función auxiliar para generar slugs limpios para las URLs de noticias
+const crearSlug = (texto) => {
+  return texto
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9 -]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+};
 
 const SLIDES = [
   {
@@ -154,33 +177,6 @@ const NIVELES = [
   },
 ];
 
-const NOTICIAS = [
-  {
-    titulo: 'Salidas Educativas',
-    descripcion: 'Experiencias en campo y visitas que llevan el aprendizaje más allá del aula.',
-    imagen: Noticia1,
-    link: '#salidas',
-  },
-  {
-    titulo: 'Competencias Escolares',
-    descripcion: 'Desafíos académicos y torneos que potencian la superación.',
-    imagen: Noticia2,
-    link: '#competencias',
-  },
-  {
-    titulo: 'Puentes al Futuro',
-    descripcion: 'Red de instituciones de educación superior que acompañan a nuestros egresados.',
-    imagen: Noticia4,
-    link: '#puentes',
-  },
-  {
-    titulo: 'Propuesta Multilingüe',
-    descripcion: 'Enseñanza oficial en español junto con el aprendizaje de varios idiomas.',
-    imagen: Noticia3,
-    link: '#multilingue',
-  },
-];
-
 const CONVENIOS = [
   { 
     bg: ConvenioBg1, 
@@ -242,11 +238,16 @@ const CONVENIOS = [
     alt: 'Convenio 10', 
     descripcion: 'El Instituto Santa Ana promueve diversas **acciones de articulación** con instituciones universitarias, con el propósito de acercar a nuestros estudiantes al **mundo académico y profesional**, acompañarlos en la construcción de su **proyecto de vida** y favorecer la continuidad de sus **estudios superiores**.\n\nEn este marco, se desarrollan convenios y propuestas con la **Universidad del Salvador (USAL)**, **Universidad de Flores**, **Universidad Austral**, **Universidad Torcuato Di Tella**, **Universidad de San Andrés**, **Universidad de Tres de Febrero (UNTREF)**, **Universidad Blas Pascal** y **Universidad Siglo 21**.\n\nLas propuestas incluyen **visitas a universidades**, **talleres de orientación vocacional**, actividades de acercamiento a la vida universitaria, competencias de alegatos, **Modelos de Naciones Unidas**, torneos deportivos y otras experiencias académicas y formativas.\n\nAsimismo, contamos con **programas de becas** para nuestros estudiantes junto con la **Universidad Torcuato Di Tella**, la **Universidad del Salvador** y la **Universidad Austral**, ampliando las oportunidades de acceso y continuidad.\n\nTambién se desarrollan instancias de **capacitación y actualización docente**, fortaleciendo el vínculo entre la escuela, la universidad y el mundo profesional.' 
   },
+  {
+    bg: ConvenioBg11,
+    logo: ConvenioLogo11,
+    alt: 'Convenio 11',
+    descripcion: 'El Instituto Santa Ana ofrece a sus estudiantes la posibilidad de cursar el prestigioso programa de doble titulación **Dual Diploma** en alianza con **Academica International Studies**.\n\nEsta propuesta permite a los alumnos obtener simultáneamente el título de bachiller argentino y el estadounidense (**High School Diploma**), cursando materias de manera online con un enfoque global, bilingüe y flexible. Al obtener el título secundario de Estados Unidos, los estudiantes quedan habilitados para postularse e ingresar directamente a las universidades de dicho país, facilitando su acceso a la educación superior internacional.\n\nComo parte de esta alianza institucional, las familias cuentan con un beneficio exclusivo de un **50% de descuento en la tarifa de admisión** para comenzar el programa.\n\nEste trayecto internacional fomenta la autonomía, el dominio avanzado del inglés y el desarrollo de competencias digitales, preparando a los estudiantes para los desafíos globales y un entorno profesional competitivo.'
+  }
 ];
 
 const AUTOPLAY_MS = 6000;
 
-// Función auxiliar para parsear **negrita** de forma limpia
 const renderConNegritas = (texto) => {
   return texto.split('\n\n').map((parrafo, i) => {
     const partes = parrafo.split(/\*\*(.*?)\*\*/g);
@@ -281,7 +282,6 @@ const Landing = () => {
   return (
     <>
       <section className="landing-hero">
-        {/* ---------- Carrusel principal ---------- */}
         <div className="hero-carousel">
           {SLIDES.map((slide, index) => (
             <div
@@ -341,13 +341,11 @@ const Landing = () => {
             </svg>
           </button>
 
-          {/* Logo en esquina inferior derecha */}
           <div className="hero-brand-logo">
             <img src={AcademicaLogo} alt="Academica International Studies" />
           </div>
         </div>
 
-        {/* ---------- Galería inferior superpuesta ---------- */}
         <div id="niveles" className="container hero-gallery-wrapper">
           <div className="row g-2 g-md-4 hero-gallery">
             {GALERIA.map((item, index) => (
@@ -364,7 +362,6 @@ const Landing = () => {
         </div>
       </section>
 
-      {/* ---------- Sección de Niveles Educativos ---------- */}
       <section className="niveles-section">
         <div className="container">
           <div className="niveles-grid">
@@ -386,7 +383,6 @@ const Landing = () => {
         </div>
       </section>
 
-      {/* ---------- Sección Educación del Futuro ---------- */}
       <section
         className="tech-section"
         style={{ '--tech-bg-img': `url(${TechBg})` }}
@@ -435,32 +431,34 @@ const Landing = () => {
         </div>
       </section>
 
-      {/* ---------- Sección de Noticias / Experiencias Institucionales ---------- */}
       <section className="noticias-section py-5">
         <div className="container">
           <div className="noticias-grid">
-            {NOTICIAS.map((item, index) => (
-              <div className="noticia-card" key={index}>
-                <div className="noticia-card-bg">
-                  <img src={item.imagen} alt={item.titulo} className="noticia-card-img" />
-                  <div className="noticia-card-fade" />
-                </div>
-                <div className="noticia-card-content">
-                  <div>
-                    <h3 className="noticia-title">{item.titulo}</h3>
-                    <p className="noticia-desc">{item.descripcion}</p>
+            {noticiasData.map((item) => {
+              const slug = crearSlug(item.titulo);
+              return (
+                <div className="noticia-card" key={item.id}>
+                  <div className="noticia-card-bg">
+                    <img src={imagenesNoticiasMap[item.imagenKey]} alt={item.titulo} className="noticia-card-img" />
+                    <div className="noticia-card-fade" />
                   </div>
-                  <a href={item.link} className="btn noticia-btn">
-                    Conocé más
-                  </a>
+                  <div className="noticia-card-content">
+                    <div>
+                      <h3 className="noticia-title">{item.titulo}</h3>
+                      <p className="noticia-desc">{item.resumen}</p>
+                    </div>
+                    {/* Enlace dinámico con el slug corregido a la ruta de detalle */}
+                    <a href={`/noticias/detalle/${slug}`} className="btn noticia-btn">
+                      Conocé más
+                    </a>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* ---------- Banner Rotatorio de Convenios ---------- */}
       <section className="convenios-section">
         <div className="convenios-slider">
           <div className="convenios-track">
@@ -480,7 +478,6 @@ const Landing = () => {
         </div>
       </section>
 
-      {/* ---------- Modal / Cartel con el BG, Overlay y Texto Justificado ---------- */}
       {convenioSeleccionado && (
         <div className="modal fade show d-block" tabIndex="-1" style={{ backgroundColor: 'rgba(0,0,0,0.6)' }}>
           <div className="modal-dialog modal-dialog-centered">
@@ -501,7 +498,6 @@ const Landing = () => {
                   <img src={convenioSeleccionado.logo} alt={convenioSeleccionado.alt} className="convenio-logo" />
                 </div>
                 
-                {/* Texto procesado con justificación y negritas */}
                 <div className="text-muted modal-descripcion">
                   {renderConNegritas(convenioSeleccionado.descripcion)}
                 </div>
