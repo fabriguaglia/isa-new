@@ -259,10 +259,13 @@
   flex-direction: column;
   justify-content: flex-end;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  transition: box-shadow 0.3s ease;
+  /* Añadimos transform a la transición general de la tarjeta */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .nivel-card:hover {
+  /* Hacemos que la tarjeta suba 6 píxeles */
+  transform: translateY(-6px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
@@ -278,11 +281,8 @@
   object-fit: cover;
   object-position: center top;
   display: block;
+  /* Quitamos el transition de escala de la imagen si ya no se va a usar */
   transition: transform 0.4s ease;
-}
-
-.nivel-card:hover .nivel-card-img {
-  transform: scale(1.08) translateY(-3px);
 }
 
 .nivel-card-fade {
