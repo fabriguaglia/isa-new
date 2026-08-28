@@ -4,31 +4,103 @@
     "titulo": "Salidas Educativas",
     "fecha": "Actualidad",
     "resumen": "Experiencias en campo y visitas que llevan el aprendizaje más allá del aula.",
-    "contenido": "Las salidas educativas brindan a nuestros estudiantes experiencias directas en campo y visitas guiadas, permitiéndoles conectar los contenidos teóricos con la realidad y llevar el aprendizaje mucho más allá de los límites del aula.",
-    "imagenKey": "noticia1"
+    "imagenKey": "noticia1",
+    "contenido": [
+      {
+        "tipo": "parrafo",
+        "texto": "Las salidas educativas brindan a nuestros estudiantes experiencias directas en campo y visitas guiadas, permitiéndoles conectar los contenidos teóricos con la realidad y llevar el aprendizaje mucho más allá de los límites del aula."
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "Estas vivencias fomentan la curiosidad innata de los jóvenes, propiciando espacios de socialización, respeto mutuo y descubrimiento fuera del entorno escolar tradicional."
+      },
+      {
+        "tipo": "imagen",
+        "url": "extra1",
+        "caption": "Visita a la fábrica de Bimbo."
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "De este modo, afianzamos nuestro compromiso con una educación integral y dinámica que prioriza el aprendizaje significativo en cada etapa del desarrollo estudiantil."
+      }
+    ]
   },
   {
     "id": 2,
     "titulo": "Competencias Escolares",
     "fecha": "Actualidad",
     "resumen": "Desafíos académicos y torneos que potencian la superación.",
-    "contenido": "A través de desafíos académicos, olimpiadas y torneos, promovemos la participación de nuestros estudiantes en competencias escolares que potencian el esfuerzo, el trabajo en equipo y la superación personal.",
-    "imagenKey": "noticia2"
+    "imagenKey": "noticia2",
+    "contenido": [
+      {
+        "tipo": "parrafo",
+        "texto": "A través de desafíos académicos, olimpiadas y torneos, promovemos la participación de nuestros estudiantes en competencias escolares que potencian el esfuerzo, el trabajo en equipo y la superación personal."
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "Cada certamen representa una oportunidad única para medir capacidades, aprender a gestionar la concentración bajo presión y compartir experiencias con pares de otras instituciones."
+      },
+      {
+        "tipo": "imagen",
+        "url": "extra2",
+        "caption": "Stand del proyecto Sky-Search en la Feria ACTE 2026."
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "Celebramos cada logro colectivo e individual, impulsando a los jóvenes a confiar en su potencial y a seguir preparándose con entusiasmo para futuros desafíos."
+      }
+    ]
   },
   {
     "id": 3,
     "titulo": "Puentes al Futuro",
     "fecha": "Actualidad",
     "resumen": "Red de instituciones de educación superior que acompañan a nuestros egresados.",
-    "contenido": "El programa Puentes al Futuro consolida una sólida red de articulación con instituciones de educación superior y universidades prestigiosas, diseñando trayectos que acompañan de cerca a nuestros egresados en su transición al mundo académico.",
-    "imagenKey": "noticia4"
+    "imagenKey": "noticia4",
+    "contenido": [
+      {
+        "tipo": "parrafo",
+        "texto": "El programa Puentes al Futuro consolida una sólida red de articulación con instituciones de educación superior y universidades prestigiosas, diseñando trayectos que acompañan de cerca a nuestros egresados en su transición al mundo académico."
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "Mediante charlas informativas, visitas a campus universitarios y convenios especiales, facilitamos el acceso a herramientas de planificación para su próximo horizonte profesional."
+      },
+      {
+        "tipo": "imagen",
+        "url": "extra3",
+        "caption": "Firma del convenio con la Universidad Torcuato Di Tella."
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "Acompañamos esta etapa clave asegurando que cada alumno cuente con el respaldo institucional necesario para dar el salto definitivo hacia su vocación."
+      }
+    ]
   },
   {
     "id": 4,
     "titulo": "Propuesta Multilingüe",
     "fecha": "Actualidad",
     "resumen": "Enseñanza oficial en español junto con el aprendizaje de varios idiomas.",
-    "contenido": "Nuestra propuesta multilingüe combina la sólida formación oficial en español con el aprendizaje estructurado de varios idiomas, preparando a los alumnos con herramientas globales de comunicación para un mundo interconectado.",
-    "imagenKey": "noticia3"
+    "imagenKey": "noticia3",
+    "contenido": [
+      {
+        "tipo": "parrafo",
+        "texto": "Nuestra propuesta multilingüe combina la sólida formación oficial en español con el aprendizaje estructurado de varios idiomas, preparando a los alumnos con herramientas globales de comunicación para un mundo interconectado."
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "Fomentamos la fluidez oral y la comprensión intercultural desde temprana edad, integrando recursos tecnológicos y metodologías lúdicas adaptadas a cada nivel."
+      },
+      {
+        "tipo": "imagen",
+        "url": "extra4",
+        "caption": "Sede de la Asociación Argentina de Cultura Inglesa"
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "De esta forma, abrimos puertas hacia un futuro sin fronteras, dotando a los estudiantes de competencias clave altamente valoradas en el ámbito académico y laboral contemporáneo."
+      }
+    ]
   }
 ]

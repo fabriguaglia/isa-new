@@ -1,5 +1,5 @@
 /* ==========================================
-   ESTILOS PARA COMPUTADORA (Escritorio)
+   ESTILOS GENERALES Y DE COMPUTADORA (Escritorio)
    ========================================== */
 .noticias-container {
   width: 100%;
@@ -29,20 +29,19 @@
 
 
 /* ==========================================
-   ESTILOS PARA TELÉFONOS (Móviles)
+   ESTILOS EXCLUSIVOS PARA TELÉFONOS (Móviles)
    ========================================== */
 @media (max-width: 991.98px) {
   .noticia-card-item .card-body-wrapper {
     display: flex !important;
     flex-direction: row !important;
-    align-items: stretch;
+    align-items: center !important;
   }
 
-  /* FORZAMOS una altura fija y cuadrada para que la imagen no crezca de más */
   .noticia-img-container {
     width: 130px !important;
     min-width: 130px !important;
-    height: 140px !important; /* Altura controlada y fija en celular */
+    height: 130px !important;
   }
 
   .noticia-img-container img {
@@ -54,7 +53,11 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start !important;
     padding: 10px 12px !important;
+  }
+
+  .noticia-content-container .btn {
+    margin-top: 8px !important;
   }
 }

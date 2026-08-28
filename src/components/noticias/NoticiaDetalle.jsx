@@ -1,18 +1,31 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-
-import Noticia1 from '../assets/images/landing/noticias/noticia-1.png';
-import Noticia2 from '../assets/images/landing/noticias/noticia-2.png';
-import Noticia3 from '../assets/images/landing/noticias/noticia-3.png';
-import Noticia4 from '../assets/images/landing/noticias/noticia-4.png';
-
 import noticiasData from '../../data/noticias.json';
 
-const imagenesNoticiasMap = {
-  noticia1: Noticia1,
-  noticia2: Noticia2,
-  noticia3: Noticia3,
-  noticia4: Noticia4,
+// Imágenes principales (portada / tarjeta)
+import Noticia1Img from '../assets/images/landing/noticias/noticia-1.png';
+import Noticia2Img from '../assets/images/landing/noticias/noticia-2.png';
+import Noticia3Img from '../assets/images/landing/noticias/noticia-3.png';
+import Noticia4Img from '../assets/images/landing/noticias/noticia-4.png';
+
+// Imágenes extra para el interior del texto
+import Extra1Img from '../assets/images/landing/noticias/extra-1.png';
+import Extra2Img from '../assets/images/landing/noticias/extra-2.png';
+import Extra3Img from '../assets/images/landing/noticias/extra-3.png';
+import Extra4Img from '../assets/images/landing/noticias/extra-4.png';
+
+const imagenesMap = {
+  noticia1: Noticia1Img,
+  noticia2: Noticia2Img,
+  noticia3: Noticia3Img,
+  noticia4: Noticia4Img,
+};
+
+const imagenesExtraMap = {
+  extra1: Extra1Img,
+  extra2: Extra2Img,
+  extra3: Extra3Img,
+  extra4: Extra4Img,
 };
 
 const crearSlug = (texto) => {
@@ -28,51 +41,73 @@ const crearSlug = (texto) => {
 const NoticiaDetalle = () => {
   const { slug } = useParams();
   
-  const noticia = noticiasData.find((item) => crearSlug(item.titulo) === slug);
+  const noticia = noticiasData.find((n) => crearSlug(n.titulo) === slug);
 
   if (!noticia) {
     return (
-      <div className="container py-5 text-center">
-        <h2>No se encontró la noticia solicitada</h2>
-        <Link to="/" className="btn btn-primary mt-3">
-          Volver al inicio
+      <div className="container my-5 text-center">
+        <h3 className="text-secondary">Noticia no encontrada</h3>
+        <Link to="/noticias" className="btn btn-primary mt-3" style={{ backgroundColor: '#334779', border: 'none' }}>
+          Volver a noticias
         </Link>
       </div>
     );
   }
 
-  const imagenSrc = imagenesNoticiasMap[noticia.imagenKey];
-
   return (
-    <div className="container py-5 my-4">
+    <div className="container my-5" style={{ maxWidth: '800px' }}>
+      <Link to="/noticias" className="btn btn-outline-secondary mb-4 btn-sm rounded-pill px-3">
+        ← Volver a noticias
+      </Link>
+
       <div className="mb-4">
-        <Link to="/noticias" className="btn btn-outline-secondary btn-sm">
-          &larr; Volver a noticias
-        </Link>
+        <span className="text-muted small">{noticia.fecha}</span>
+        <h1 className="fw-bold display-6 mt-1" style={{ color: '#334779' }}>{noticia.titulo}</h1>
       </div>
 
-      <div className="row align-items-center g-5">
-        {imagenSrc && (
-          <div className="col-lg-6 text-center">
-            <div className="p-2 bg-light rounded shadow-sm border">
-              <img 
-                src={imagenSrc} 
-                alt={noticia.titulo} 
-                className="img-fluid rounded" 
-                style={{ maxHeight: '500px', width: '100%', objectFit: 'contain' }}
-              />
-            </div>
-          </div>
-        )}
+      {/* Imagen Principal - Altura ampliada en PC (550px) */}
+      <div className="mb-4 rounded-3 overflow-hidden shadow-sm noticia-img-detalle-pc">
+        <img 
+          src={imagenesMap[noticia.imagenKey]} 
+          alt={noticia.titulo} 
+          className="w-100 object-fit-cover" 
+          style={{ height: '550px' }}
+        />
+      </div>
 
-        <div className={`col-lg-${imagenSrc ? '6' : '12'}`}>
-          <h1 className="fw-bold mb-4 text-dark">{noticia.titulo}</h1>
-          
-          <div className="noticia-contenido text-muted fs-6 lh-lg">
-            <p className="fw-semibold fs-5 text-dark mb-3">{noticia.resumen}</p>
-            {noticia.contenido && <p>{noticia.contenido}</p>}
-          </div>
-        </div>
+      {/* Recorrido de bloques de contenido */}
+      <div className="cuerpo-noticia">
+        {noticia.contenido.map((bloque, index) => {
+          if (bloque.tipo === 'parrafo') {
+            return (
+              <p key={index} className="text-secondary mb-4" style={{ fontSize: '1.05rem', lineHeight: '1.7' }}>
+                {bloque.texto}
+              </p>
+            );
+          }
+
+          if (bloque.tipo === 'imagen') {
+            return (
+              <figure key={index} className="my-5 text-center">
+                <div className="rounded-3 overflow-hidden shadow-sm mb-2 noticia-img-detalle-pc">
+                  <img 
+                    src={imagenesExtraMap[bloque.url]} 
+                    alt={bloque.caption || 'Imagen interior'} 
+                    className="w-100 object-fit-cover" 
+                    style={{ height: '500px' }}
+                  />
+                </div>
+                {bloque.caption && (
+                  <figcaption className="text-muted small fst-italic">
+                    {bloque.caption}
+                  </figcaption>
+                )}
+              </figure>
+            );
+          }
+
+          return null;
+        })}
       </div>
     </div>
   );

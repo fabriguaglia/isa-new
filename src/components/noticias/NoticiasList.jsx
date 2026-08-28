@@ -1,9 +1,8 @@
 import React from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import noticiasData from '../../data/noticias.json';
-import './NoticiasList.css'; // Importamos el CSS unificado
+import './NoticiasList.css';
 
-// Importamos las imágenes desde tu estructura de carpetas
 import Noticia1Img from '../assets/images/landing/noticias/noticia-1.png';
 import Noticia2Img from '../assets/images/landing/noticias/noticia-2.png';
 import Noticia3Img from '../assets/images/landing/noticias/noticia-3.png';
@@ -46,27 +45,15 @@ const NoticiasList = () => {
         <hr className="w-25 mx-auto mt-3" style={{ backgroundColor: '#334779', height: '3px', opacity: 1 }} />
       </div>
 
-      {/* Contenedor principal en fila para PC y columna para móvil */}
       <div className="d-flex flex-column flex-lg-row gap-4 justify-content-center align-items-stretch overflow-auto pb-3">
         {currentNoticias.map((noticia) => {
           const slug = crearSlug(noticia.titulo);
           return (
-            <div 
-              className="card shadow-sm border-0 overflow-hidden rounded-3 noticia-card-item" 
-              key={noticia.id}
-            >
-              {/* Estructura interna controlada por el CSS */}
+            <div className="card shadow-sm border-0 overflow-hidden rounded-3 noticia-card-item" key={noticia.id}>
               <div className="card-body-wrapper d-flex flex-column flex-lg-column h-100">
-                
-                {/* Imagen */}
                 <div className="noticia-img-container">
-                  <img 
-                    src={imagenesMap[noticia.imagenKey]} 
-                    alt={noticia.titulo} 
-                  />
+                  <img src={imagenesMap[noticia.imagenKey]} alt={noticia.titulo} />
                 </div>
-
-                {/* Contenido */}
                 <div className="noticia-content-container card-body d-flex flex-column p-4 flex-grow-1">
                   <div>
                     <div className="d-flex align-items-center text-muted small mb-2">
@@ -78,16 +65,9 @@ const NoticiasList = () => {
                       </svg>
                       <span style={{ fontSize: '0.8rem' }}>{noticia.fecha}</span>
                     </div>
-
-                    <h3 className="fw-bold mb-2" style={{ color: '#2c3e50', fontSize: '1rem', lineHeight: '1.3' }}>
-                      {noticia.titulo}
-                    </h3>
-                    
-                    <p className="text-muted mb-4 flex-grow-1" style={{ fontSize: '0.85rem', lineHeight: '1.4' }}>
-                      {noticia.resumen}
-                    </p>
+                    <h3 className="fw-bold mb-2" style={{ color: '#2c3e50', fontSize: '1rem', lineHeight: '1.3' }}>{noticia.titulo}</h3>
+                    <p className="text-muted mb-4 flex-grow-1" style={{ fontSize: '0.85rem', lineHeight: '1.4' }}>{noticia.resumen}</p>
                   </div>
-                  
                   <div>
                     <Link 
                       to={`/noticias/detalle/${slug}`} 
@@ -98,37 +78,27 @@ const NoticiasList = () => {
                     </Link>
                   </div>
                 </div>
-
               </div>
             </div>
           );
         })}
       </div>
 
-      {/* Paginación */}
       {totalPages > 1 && (
         <nav className="d-flex justify-content-center mt-5">
           <ul className="pagination shadow-sm rounded-pill p-1 bg-white border">
             <li className={`page-item ${currentPage <= 1 ? 'disabled' : ''}`}>
-              <button 
-                className="page-link border-0 rounded-pill px-3 text-secondary" 
-                onClick={() => navigate(`/noticias/pagina/${currentPage - 1}`)}
-              >
+              <button className="page-link border-0 rounded-pill px-3 text-secondary" onClick={() => navigate(`/noticias/pagina/${currentPage - 1}`)}>
                 Anterior
               </button>
             </li>
-
             {Array.from({ length: totalPages }, (_, i) => {
               const pageNum = i + 1;
               return (
                 <li key={pageNum} className="page-item mx-1">
                   <Link 
                     className={`page-link border-0 rounded-circle d-flex align-items-center justify-content-center ${pageNum === currentPage ? 'text-white fw-bold' : 'text-secondary'}`}
-                    style={{ 
-                      width: '36px', 
-                      height: '36px', 
-                      backgroundColor: pageNum === currentPage ? '#334779' : 'transparent' 
-                    }}
+                    style={{ width: '36px', height: '36px', backgroundColor: pageNum === currentPage ? '#334779' : 'transparent' }}
                     to={`/noticias/pagina/${pageNum}`}
                   >
                     {pageNum}
@@ -136,12 +106,8 @@ const NoticiasList = () => {
                 </li>
               );
             })}
-
             <li className={`page-item ${currentPage >= totalPages ? 'disabled' : ''}`}>
-              <button 
-                className="page-link border-0 rounded-pill px-3 text-secondary" 
-                onClick={() => navigate(`/noticias/pagina/${currentPage + 1}`)}
-              >
+              <button className="page-link border-0 rounded-pill px-3 text-secondary" onClick={() => navigate(`/noticias/pagina/${currentPage + 1}`)}>
                 Siguiente
               </button>
             </li>
