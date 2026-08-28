@@ -1,26 +1,18 @@
 /* Altura por defecto en celulares */
-.noticia-imagen-principal img,
-.noticia-imagen-extra img {
+.noticia-img-detalle-pc img {
   height: auto; 
 }
 
-/* SOLO EN PC: Aplicamos la altura fija y el recorte */
+/* SOLO EN PC */
 @media (min-width: 992px) {
-  .noticia-imagen-principal {
-    height: 550px !important;
+  .noticia-img-detalle-pc {
+    height: 600px !important;
     overflow: hidden !important;
   }
-  .noticia-imagen-principal img {
-    height: 550px !important;
-    object-fit: cover !important;
-  }
-
-  .noticia-imagen-extra {
-    height: 500px !important;
-    overflow: hidden !important;
-  }
-  .noticia-imagen-extra img {
-    height: 500px !important;
+  
+  .noticia-img-detalle-pc img {
+    height: 100% !important; /* Forzamos a que ocupe todo el alto del contenedor */
+    min-height: 450px !important;
     object-fit: cover !important;
   }
 }

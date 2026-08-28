@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./NoticiaDetalle.css";
 import { useParams, Link } from 'react-router-dom';
 import noticiasData from '../../data/noticias.json';
@@ -44,6 +44,11 @@ const crearSlug = (texto) => {
 
 const NoticiaDetalle = () => {
   const { slug } = useParams();
+
+  // Fuerza el scroll arriba de todo al cambiar de noticia o cargar
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
   
   const noticia = noticiasData.find((n) => crearSlug(n.titulo) === slug);
 
@@ -70,12 +75,12 @@ const NoticiaDetalle = () => {
         <h1 className="fw-bold display-6 mt-1" style={{ color: '#334779' }}>{noticia.titulo}</h1>
       </div>
 
-      {/* Imagen Principal con la clase aplicativa para PC */}
-      <div className="mb-4 rounded-3 overflow-hidden shadow-sm noticia-imagen-principal">
+      {/* Imagen Principal con la clase CSS para PC */}
+      <div className="mb-4 rounded-3 overflow-hidden shadow-sm noticia-img-detalle-pc">
         <img 
           src={imagenesMap[noticia.imagenKey]} 
           alt={noticia.titulo} 
-          className="w-100 object-fit-cover" 
+          className="w-100 object-fit-cover noticia-img-real" 
         />
       </div>
 
@@ -93,11 +98,11 @@ const NoticiaDetalle = () => {
           if (bloque.tipo === 'imagen') {
             return (
               <figure key={index} className="my-5 text-center">
-                <div className="rounded-3 overflow-hidden shadow-sm mb-2 noticia-imagen-extra">
+                <div className="rounded-3 overflow-hidden shadow-sm mb-2 noticia-img-detalle-pc">
                   <img 
                     src={imagenesExtraMap[bloque.url]} 
                     alt={bloque.caption || 'Imagen interior'} 
-                    className="w-100 object-fit-cover" 
+                    className="w-100 object-fit-cover noticia-img-real" 
                   />
                 </div>
                 {bloque.caption && (
