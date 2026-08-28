@@ -448,7 +448,7 @@ const Landing = () => {
                       <p className="noticia-desc">{item.resumen}</p>
                     </div>
                     {/* Enlace dinámico con el slug corregido a la ruta de detalle */}
-                    <a href={`/noticias/detalle/${slug}`} className="btn noticia-btn">
+                    <a href={`/noticias/${slug}`} className="btn noticia-btn">
                       Conocé más
                     </a>
                   </div>

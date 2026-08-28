@@ -70,7 +70,7 @@ const NoticiasList = () => {
                   </div>
                   <div>
                     <Link 
-                      to={`/noticias/detalle/${slug}`} 
+                      to={`/noticias/${slug}`} 
                       className="btn btn-sm px-3 py-2 text-white fw-semibold shadow-sm w-100 text-center"
                       style={{ backgroundColor: '#334779', borderRadius: '6px', border: 'none', fontSize: '0.8rem' }}
                     >

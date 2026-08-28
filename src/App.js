@@ -15,14 +15,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         
-        {/* Página 1 de noticias (URL limpia y estética: /noticias) */}
         <Route path="/noticias" element={<NoticiasList />} />
-        
-        {/* Páginas siguientes (Ejemplo: /noticias/2) */}
-        <Route path="/noticias/:page" element={<NoticiasList />} />
-        
-        {/* Detalle individual de cada noticia */}
-        <Route path="/noticias/detalle/:slug" element={<NoticiaDetalle />} />
+        <Route path="/noticias/:slug" element={<NoticiaDetalle />} />
+        <Route path="/noticias/pagina/:page" element={<NoticiasList />} />
+
       </Routes>
 
       <Footer />

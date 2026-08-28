@@ -1,4 +1,5 @@
 import React from 'react';
+import "./NoticiaDetalle.css";
 import { useParams, Link } from 'react-router-dom';
 import noticiasData from '../../data/noticias.json';
 
@@ -29,11 +30,14 @@ const imagenesExtraMap = {
 };
 
 const crearSlug = (texto) => {
+  if (!texto) return '';
   return texto
+    .toString()
     .toLowerCase()
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/[^a-z0-9 -]/g, '')
+    .trim()
     .replace(/\s+/g, '-')
     .replace(/-+/g, '-');
 };
@@ -47,7 +51,8 @@ const NoticiaDetalle = () => {
     return (
       <div className="container my-5 text-center">
         <h3 className="text-secondary">Noticia no encontrada</h3>
-        <Link to="/noticias" className="btn btn-primary mt-3" style={{ backgroundColor: '#334779', border: 'none' }}>
+        <p className="text-muted small">El enlace al que intentás acceder no coincide con ningún artículo disponible.</p>
+        <Link to="/noticias/pagina/1" className="btn btn-primary mt-3" style={{ backgroundColor: '#334779', border: 'none' }}>
           Volver a noticias
         </Link>
       </div>
@@ -56,7 +61,7 @@ const NoticiaDetalle = () => {
 
   return (
     <div className="container my-5" style={{ maxWidth: '800px' }}>
-      <Link to="/noticias" className="btn btn-outline-secondary mb-4 btn-sm rounded-pill px-3">
+      <Link to="/noticias/pagina/1" className="btn btn-outline-secondary mb-4 btn-sm rounded-pill px-3">
         ← Volver a noticias
       </Link>
 
@@ -65,19 +70,18 @@ const NoticiaDetalle = () => {
         <h1 className="fw-bold display-6 mt-1" style={{ color: '#334779' }}>{noticia.titulo}</h1>
       </div>
 
-      {/* Imagen Principal - Altura ampliada en PC (550px) */}
-      <div className="mb-4 rounded-3 overflow-hidden shadow-sm noticia-img-detalle-pc">
+      {/* Imagen Principal con la clase aplicativa para PC */}
+      <div className="mb-4 rounded-3 overflow-hidden shadow-sm noticia-imagen-principal">
         <img 
           src={imagenesMap[noticia.imagenKey]} 
           alt={noticia.titulo} 
           className="w-100 object-fit-cover" 
-          style={{ height: '550px' }}
         />
       </div>
 
       {/* Recorrido de bloques de contenido */}
       <div className="cuerpo-noticia">
-        {noticia.contenido.map((bloque, index) => {
+        {noticia.contenido && noticia.contenido.map((bloque, index) => {
           if (bloque.tipo === 'parrafo') {
             return (
               <p key={index} className="text-secondary mb-4" style={{ fontSize: '1.05rem', lineHeight: '1.7' }}>
@@ -89,12 +93,11 @@ const NoticiaDetalle = () => {
           if (bloque.tipo === 'imagen') {
             return (
               <figure key={index} className="my-5 text-center">
-                <div className="rounded-3 overflow-hidden shadow-sm mb-2 noticia-img-detalle-pc">
+                <div className="rounded-3 overflow-hidden shadow-sm mb-2 noticia-imagen-extra">
                   <img 
                     src={imagenesExtraMap[bloque.url]} 
                     alt={bloque.caption || 'Imagen interior'} 
                     className="w-100 object-fit-cover" 
-                    style={{ height: '500px' }}
                   />
                 </div>
                 {bloque.caption && (

@@ -1,0 +1,26 @@
+/* Altura por defecto en celulares */
+.noticia-imagen-principal img,
+.noticia-imagen-extra img {
+  height: auto; 
+}
+
+/* SOLO EN PC: Aplicamos la altura fija y el recorte */
+@media (min-width: 992px) {
+  .noticia-imagen-principal {
+    height: 550px !important;
+    overflow: hidden !important;
+  }
+  .noticia-imagen-principal img {
+    height: 550px !important;
+    object-fit: cover !important;
+  }
+
+  .noticia-imagen-extra {
+    height: 500px !important;
+    overflow: hidden !important;
+  }
+  .noticia-imagen-extra img {
+    height: 500px !important;
+    object-fit: cover !important;
+  }
+}
