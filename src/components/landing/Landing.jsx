@@ -36,6 +36,7 @@ import Noticia1 from '../assets/images/landing/noticias/noticia-1.png';
 import Noticia2 from '../assets/images/landing/noticias/noticia-2.png';
 import Noticia3 from '../assets/images/landing/noticias/noticia-3.png';
 import Noticia4 from '../assets/images/landing/noticias/noticia-4.png';
+import Noticia5 from '../assets/images/landing/noticias/noticia-5.jpg';
 
 // ==========================================
 // Imágenes y descripciones para Convenios
@@ -71,6 +72,7 @@ const imagenesNoticiasMap = {
   noticia2: Noticia2,
   noticia3: Noticia3,
   noticia4: Noticia4,
+  noticia5: Noticia5,
 };
 
 // Función auxiliar para generar slugs limpios para las URLs de noticias
@@ -434,7 +436,7 @@ const Landing = () => {
       <section className="noticias-section py-5">
         <div className="container">
           <div className="noticias-grid">
-            {noticiasData.map((item) => {
+            {noticiasData.slice().reverse().slice(0, 4).map((item) => {
               const slug = crearSlug(item.titulo);
               return (
                 <div className="noticia-card" key={item.id}>
@@ -447,7 +449,6 @@ const Landing = () => {
                       <h3 className="noticia-title">{item.titulo}</h3>
                       <p className="noticia-desc">{item.resumen}</p>
                     </div>
-                    {/* Enlace dinámico con el slug corregido a la ruta de detalle */}
                     <a href={`/noticias/${slug}`} className="btn noticia-btn">
                       Conocé más
                     </a>

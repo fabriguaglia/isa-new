@@ -7,12 +7,14 @@ import Noticia1Img from '../assets/images/landing/noticias/noticia-1.png';
 import Noticia2Img from '../assets/images/landing/noticias/noticia-2.png';
 import Noticia3Img from '../assets/images/landing/noticias/noticia-3.png';
 import Noticia4Img from '../assets/images/landing/noticias/noticia-4.png';
+import Noticia5Img from '../assets/images/landing/noticias/noticia-5.jpg';
 
 const imagenesMap = {
   noticia1: Noticia1Img,
   noticia2: Noticia2Img,
   noticia3: Noticia3Img,
   noticia4: Noticia4Img,
+  noticia5: Noticia5Img,
 };
 
 const crearSlug = (texto) => {
@@ -32,10 +34,13 @@ const NoticiasList = () => {
   const navigate = useNavigate();
   
   const currentPage = parseInt(page, 10) || 1;
-  const totalPages = Math.ceil(noticiasData.length / ITEMS_PER_PAGE);
+  
+  // Creamos una copia invertida para que las últimas del JSON aparezcan primero
+  const noticiasInvertidas = noticiasData.slice().reverse();
+  const totalPages = Math.ceil(noticiasInvertidas.length / ITEMS_PER_PAGE);
 
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-  const currentNoticias = noticiasData.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  const currentNoticias = noticiasInvertidas.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
   return (
     <div className="container my-5 noticias-container">
@@ -45,16 +50,16 @@ const NoticiasList = () => {
         <hr className="w-25 mx-auto mt-3" style={{ backgroundColor: '#334779', height: '3px', opacity: 1 }} />
       </div>
 
-      <div className="d-flex flex-column flex-lg-row gap-4 justify-content-center align-items-stretch overflow-auto pb-3">
+      <div className="noticias-grid-layout pb-3">
         {currentNoticias.map((noticia) => {
           const slug = crearSlug(noticia.titulo);
           return (
             <div className="card shadow-sm border-0 overflow-hidden rounded-3 noticia-card-item" key={noticia.id}>
-              <div className="card-body-wrapper d-flex flex-column flex-lg-column h-100">
+              <div className="card-body-wrapper d-flex flex-column h-100">
                 <div className="noticia-img-container">
                   <img src={imagenesMap[noticia.imagenKey]} alt={noticia.titulo} />
                 </div>
-                <div className="noticia-content-container card-body d-flex flex-column p-4 flex-grow-1">
+                <div className="noticia-content-container card-body d-flex flex-column p-3 flex-grow-1">
                   <div>
                     <div className="d-flex align-items-center text-muted small mb-2">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="me-1">
@@ -63,16 +68,16 @@ const NoticiasList = () => {
                         <line x1="8" y1="2" x2="8" y2="6"></line>
                         <line x1="3" y1="10" x2="21" y2="10"></line>
                       </svg>
-                      <span style={{ fontSize: '0.8rem' }}>{noticia.fecha}</span>
+                      <span style={{ fontSize: '0.75rem' }}>{noticia.fecha}</span>
                     </div>
-                    <h3 className="fw-bold mb-2" style={{ color: '#2c3e50', fontSize: '1rem', lineHeight: '1.3' }}>{noticia.titulo}</h3>
-                    <p className="text-muted mb-4 flex-grow-1" style={{ fontSize: '0.85rem', lineHeight: '1.4' }}>{noticia.resumen}</p>
+                    <h3 className="fw-bold mb-2" style={{ color: '#2c3e50', fontSize: '0.95rem', lineHeight: '1.25' }}>{noticia.titulo}</h3>
+                    <p className="text-muted mb-3" style={{ fontSize: '0.8rem', lineHeight: '1.35' }}>{noticia.resumen}</p>
                   </div>
-                  <div>
+                  <div className="mt-auto">
                     <Link 
                       to={`/noticias/${slug}`} 
-                      className="btn btn-sm px-3 py-2 text-white fw-semibold shadow-sm w-100 text-center"
-                      style={{ backgroundColor: '#334779', borderRadius: '6px', border: 'none', fontSize: '0.8rem' }}
+                      className="btn btn-sm px-3 py-1.5 text-white fw-semibold shadow-sm w-100 text-center"
+                      style={{ backgroundColor: '#334779', borderRadius: '6px', border: 'none', fontSize: '0.75rem' }}
                     >
                       Leer más
                     </Link>

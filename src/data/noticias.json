@@ -8,11 +8,11 @@
     "contenido": [
       {
         "tipo": "parrafo",
-        "texto": "Las salidas educativas brindan a nuestros estudiantes experiencias directas en campo y visitas guiadas, permitiéndoles conectar los contenidos teóricos con la realidad y llevar el aprendizaje mucho más allá de los límites del aula."
+        "texto": "Las <strong>salidas educativas</strong> brindan a nuestros estudiantes <strong>experiencias directas en campo</strong> y visitas guiadas, permitiéndoles conectar los contenidos teóricos con la realidad y llevar el aprendizaje mucho más allá de los límites del aula."
       },
       {
         "tipo": "parrafo",
-        "texto": "Estas vivencias fomentan la curiosidad innata de los jóvenes, propiciando espacios de socialización, respeto mutuo y descubrimiento fuera del entorno escolar tradicional."
+        "texto": "Estas vivencias fomentan la <strong>curiosidad innata</strong> de los jóvenes, propiciando espacios de socialización, respeto mutuo y descubrimiento fuera del entorno escolar tradicional."
       },
       {
         "tipo": "imagen",
@@ -21,7 +21,7 @@
       },
       {
         "tipo": "parrafo",
-        "texto": "De este modo, afianzamos nuestro compromiso con una educación integral y dinámica que prioriza el aprendizaje significativo en cada etapa del desarrollo estudiantil."
+        "texto": "De este modo, afianzamos nuestro compromiso con una <strong>educación integral y dinámica</strong> que prioriza el aprendizaje significativo en cada etapa del desarrollo estudiantil."
       }
     ]
   },
@@ -34,7 +34,7 @@
     "contenido": [
       {
         "tipo": "parrafo",
-        "texto": "A través de desafíos académicos, olimpiadas y torneos, promovemos la participación de nuestros estudiantes en competencias escolares que potencian el esfuerzo, el trabajo en equipo y la superación personal."
+        "texto": "A través de desafíos académicos, olimpiadas y torneos, promovemos la participación de nuestros estudiantes en <strong>competencias escolares</strong> que potencian el esfuerzo, el <strong>trabajo en equipo</strong> y la superación personal."
       },
       {
         "tipo": "parrafo",
@@ -47,7 +47,7 @@
       },
       {
         "tipo": "parrafo",
-        "texto": "Celebramos cada logro colectivo e individual, impulsando a los jóvenes a confiar en su potencial y a seguir preparándose con entusiasmo para futuros desafíos."
+        "texto": "Celebramos cada logro colectivo e individual, impulsando a los jóvenes a <strong>confiar en su potencial</strong> y a seguir preparándose con entusiasmo para futuros desafíos."
       }
     ]
   },
@@ -60,7 +60,7 @@
     "contenido": [
       {
         "tipo": "parrafo",
-        "texto": "El programa Puentes al Futuro consolida una sólida red de articulación con instituciones de educación superior y universidades prestigiosas, diseñando trayectos que acompañan de cerca a nuestros egresados en su transición al mundo académico."
+        "texto": "El programa <strong>Puentes al Futuro</strong> consolida una sólida <strong>red de articulación con instituciones de educación superior</strong> y universidades prestigiosas, diseñando trayectos que acompañan de cerca a nuestros egresados en su transición al mundo académico."
       },
       {
         "tipo": "parrafo",
@@ -73,7 +73,7 @@
       },
       {
         "tipo": "parrafo",
-        "texto": "Acompañamos esta etapa clave asegurando que cada alumno cuente con el respaldo institucional necesario para dar el salto definitivo hacia su vocación."
+        "texto": "Acompañamos esta etapa clave asegurando que cada alumno cuente con el <strong>respaldo institucional</strong> necesario para dar el salto definitivo hacia su vocación."
       }
     ]
   },
@@ -86,7 +86,7 @@
     "contenido": [
       {
         "tipo": "parrafo",
-        "texto": "Nuestra propuesta multilingüe combina la sólida formación oficial en español con el aprendizaje estructurado de varios idiomas, preparando a los alumnos con herramientas globales de comunicación para un mundo interconectado."
+        "texto": "Nuestra <strong>propuesta multilingüe</strong> combina la sólida formación oficial en español con el <strong>aprendizaje estructurado de varios idiomas</strong>, preparando a los alumnos con herramientas globales de comunicación para un mundo interconectado."
       },
       {
         "tipo": "parrafo",
@@ -99,7 +99,34 @@
       },
       {
         "tipo": "parrafo",
-        "texto": "De esta forma, abrimos puertas hacia un futuro sin fronteras, dotando a los estudiantes de competencias clave altamente valoradas en el ámbito académico y laboral contemporáneo."
+        "texto": "De esta forma, abrimos puertas hacia un futuro sin fronteras, dotando a los estudiantes de <strong>competencias clave</strong> altamente valoradas en el ámbito académico y laboral contemporáneo."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "titulo": "Orgullo Santa Ana",
+    "tema": "Logros de nuestros alumnos",
+    "fecha": "Viernes 28 de agosto de 2026",
+    "resumen": "Nuestra alumna de 5°. año Isis Famularo lanza su libro “La prueba de que fui poema”",
+    "imagenKey": "noticia5",
+    "contenido": [
+      {
+        "tipo": "parrafo",
+        "texto": "Celebramos con enorme alegría a <strong>Isis Famularo</strong>, alumna de 5.º año del Instituto Santa Ana, quien acaba de lanzar su libro <strong>“La prueba de que fui poema”</strong>. Este logro refleja no solo su talento y sensibilidad, sino también un profundo proceso de búsqueda, crecimiento y expresión personal a través de la escritura."
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "Además de este importante paso como autora, Isis participa de <strong>“Global Studies”</strong>, realiza el <strong>“Secundario Dual”</strong>, formó parte del “Modelo ONU de la Universidad de San Andrés” y actualmente participa, por segundo año consecutivo, del “Modelo UNESCO”."
+      },
+      {
+        "tipo": "imagen",
+        "url": "extra5",
+        "caption": "Portada del libro “La prueba de que fui poema”. Isis Famularo. Ediciones Miríficas."
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "Nos enorgullece acompañar trayectorias como la suya, en las que el compromiso, la creatividad y la <strong>formación integral</strong> se convierten en proyectos reales."
       }
     ]
   }

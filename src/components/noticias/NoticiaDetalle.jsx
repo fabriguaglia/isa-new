@@ -8,18 +8,21 @@ import Noticia1Img from '../assets/images/landing/noticias/noticia-1.png';
 import Noticia2Img from '../assets/images/landing/noticias/noticia-2.png';
 import Noticia3Img from '../assets/images/landing/noticias/noticia-3.png';
 import Noticia4Img from '../assets/images/landing/noticias/noticia-4.png';
+import Noticia5Img from '../assets/images/landing/noticias/noticia-5.jpg';
 
 // Imágenes extra para el interior del texto
 import Extra1Img from '../assets/images/landing/noticias/extra-1.png';
 import Extra2Img from '../assets/images/landing/noticias/extra-2.png';
 import Extra3Img from '../assets/images/landing/noticias/extra-3.png';
 import Extra4Img from '../assets/images/landing/noticias/extra-4.png';
+import Extra5Img from '../assets/images/landing/noticias/extra-5.jpg';
 
 const imagenesMap = {
   noticia1: Noticia1Img,
   noticia2: Noticia2Img,
   noticia3: Noticia3Img,
   noticia4: Noticia4Img,
+  noticia5: Noticia5Img,
 };
 
 const imagenesExtraMap = {
@@ -27,6 +30,7 @@ const imagenesExtraMap = {
   extra2: Extra2Img,
   extra3: Extra3Img,
   extra4: Extra4Img,
+  extra5: Extra5Img,
 };
 
 const crearSlug = (texto) => {
@@ -45,7 +49,6 @@ const crearSlug = (texto) => {
 const NoticiaDetalle = () => {
   const { slug } = useParams();
 
-  // Fuerza el scroll arriba de todo al cambiar de noticia o cargar
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [slug]);
@@ -71,11 +74,10 @@ const NoticiaDetalle = () => {
       </Link>
 
       <div className="mb-4">
-        <span className="text-muted small">{noticia.fecha}</span>
+        <span className="text-muted small">{noticia.tema}</span>
         <h1 className="fw-bold display-6 mt-1" style={{ color: '#334779' }}>{noticia.titulo}</h1>
       </div>
 
-      {/* Imagen Principal con la clase CSS para PC */}
       <div className="mb-4 rounded-3 overflow-hidden shadow-sm noticia-img-detalle-pc">
         <img 
           src={imagenesMap[noticia.imagenKey]} 
@@ -84,25 +86,29 @@ const NoticiaDetalle = () => {
         />
       </div>
 
-      {/* Recorrido de bloques de contenido */}
       <div className="cuerpo-noticia">
         {noticia.contenido && noticia.contenido.map((bloque, index) => {
           if (bloque.tipo === 'parrafo') {
             return (
-              <p key={index} className="text-secondary mb-4" style={{ fontSize: '1.05rem', lineHeight: '1.7' }}>
-                {bloque.texto}
-              </p>
+              <p 
+                key={index} 
+                className="text-secondary mb-4" 
+                style={{ fontSize: '1.05rem', lineHeight: '1.7' }}
+                dangerouslySetInnerHTML={{ __html: bloque.texto }}
+              />
             );
           }
 
           if (bloque.tipo === 'imagen') {
+            const esPortadaLibro = bloque.url === 'extra5';
+
             return (
               <figure key={index} className="my-5 text-center">
-                <div className="rounded-3 overflow-hidden shadow-sm mb-2 noticia-img-detalle-pc">
+                <div className={`rounded-3 overflow-hidden shadow-sm mb-2 noticia-img-detalle-pc ${esPortadaLibro ? 'contenedor-portada-libro' : ''}`}>
                   <img 
                     src={imagenesExtraMap[bloque.url]} 
                     alt={bloque.caption || 'Imagen interior'} 
-                    className="w-100 object-fit-cover noticia-img-real" 
+                    className={`w-100 noticia-img-real ${esPortadaLibro ? 'imagen-portada-libro' : 'object-fit-cover'}`} 
                   />
                 </div>
                 {bloque.caption && (
@@ -116,6 +122,10 @@ const NoticiaDetalle = () => {
 
           return null;
         })}
+      </div>
+
+      <div className="border-top pt-3 mt-5 text-muted small">
+        <span>Fecha: {noticia.fecha}</span>
       </div>
     </div>
   );
