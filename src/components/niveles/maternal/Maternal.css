@@ -1,0 +1,314 @@
+/* ============================================
+   Nivel Maternal - Estilos Exclusivos
+   ============================================ */
+
+.maternal-page-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.maternal-hero-section {
+  position: relative;
+  width: 100%;
+  margin-bottom: 4rem; 
+}
+
+.maternal-hero-section .maternal-hero-bg {
+  position: relative;
+  width: 100%;
+  height: 580px; 
+  background-size: cover;
+  background-position: center;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido del hero */
+}
+
+/* Capa oscura para mejorar legibilidad del texto */
+.maternal-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.maternal-hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.maternal-hero-text {
+  max-width: 650px;
+}
+
+.maternal-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.maternal-hero-subtitle {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* ---------- Botones Exclusivos ---------- */
+
+.maternal-btn {
+  display: inline-block;
+  padding: 0.7rem 1.8rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* Botón Traslúcido para el Hero */
+.maternal-btn-translucent {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.maternal-btn-translucent:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: #ffffff;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón Sólido Neutral para el final */
+.maternal-btn-solid {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border: 2px solid #2b2b2b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.maternal-btn-solid:hover {
+  background-color: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Tarjetas de Pilares Superpuestas ---------- */
+
+.maternal-features-wrapper {
+  position: relative;
+  z-index: 4;
+}
+
+.maternal-features-row {
+  margin-top: -100px;
+}
+
+.maternal-pilar-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.maternal-pilar-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.maternal-pilar-img-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.maternal-pilar-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.maternal-pilar-card:hover .maternal-pilar-img-wrap img {
+  transform: scale(1.08);
+}
+
+.maternal-pilar-content {
+  padding: 1.5rem;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.maternal-pilar-content h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 0.75rem;
+}
+
+.maternal-pilar-content p {
+  font-size: 0.95rem;
+  color: #666666;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* ============================================
+   Sección Información (Maternal)
+   ============================================ */
+
+.maternal-info-container-sec {
+  position: relative;
+  width: 100%;
+  padding: 4rem 0;
+  background-color: #f7f9fa; 
+  color: #333333;
+  overflow: hidden;
+}
+
+.maternal-info-container-sec::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--maternal-pattern-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  opacity: 0.04; 
+  pointer-events: none;
+  z-index: 1;
+}
+
+.maternal-section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #2b2b2b;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.maternal-custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.maternal-custom-list li {
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+  color: #4a4a4a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.maternal-custom-list li i {
+  color: #2b2b2b; 
+  font-size: 1.2rem;
+}
+
+.maternal-img-box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+.maternal-img-box::before,
+.maternal-img-box::after {
+  display: none !important;
+  content: none !important;
+}
+
+.maternal-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.maternal-text-desc {
+  color: #000000;
+  text-align: left;
+}
+
+/* ============================================
+   Responsive (Celulares y Tablets)
+   ============================================ */
+
+@media (max-width: 767.98px) {
+  .maternal-hero-section {
+    margin-bottom: 2rem;
+  }
+
+  .maternal-hero-section .maternal-hero-bg {
+    height: 75vw;
+    min-height: 320px;
+    align-items: center;
+  }
+
+  .maternal-hero-title {
+    font-size: 2rem;
+  }
+
+  .maternal-hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  /* Botón más compacto en celulares y estrictamente a la izquierda */
+  .maternal-hero-text .maternal-btn-translucent {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .maternal-features-row {
+    margin-top: -30px;
+  }
+  
+  .maternal-pilar-content {
+    padding: 1.2rem;
+    text-align: left;
+  }
+
+  .maternal-info-container-sec {
+    padding: 3rem 0;
+  }
+
+  .maternal-section-title {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .maternal-info-container-sec .maternal-text-desc {
+    text-align: left;
+  }
+
+  .maternal-custom-list li {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .maternal-cta-wrapper {
+    text-align: left !important;
+  }
+}

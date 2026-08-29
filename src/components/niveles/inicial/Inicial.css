@@ -1,0 +1,312 @@
+/* ============================================
+   Nivel Inicial - Estilos Exclusivos
+   ============================================ */
+
+.inicial-page-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.inicial-hero-section {
+  position: relative;
+  width: 100%;
+  margin-bottom: 4rem; 
+}
+
+.inicial-hero-section .inicial-hero-bg {
+  position: relative;
+  width: 100%;
+  height: 580px; 
+  background-size: cover;
+  background-position: center;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+}
+
+.inicial-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.inicial-hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.inicial-hero-text {
+  max-width: 650px;
+}
+
+.inicial-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.inicial-hero-subtitle {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* ---------- Botones Exclusivos Inicial ---------- */
+
+.inicial-btn {
+  display: inline-block;
+  padding: 0.7rem 1.8rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* Botón Traslúcido para el Hero */
+.inicial-btn-translucent {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.inicial-btn-translucent:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: #ffffff;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón Sólido Neutral para el final */
+.inicial-btn-solid {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border: 2px solid #2b2b2b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.inicial-btn-solid:hover {
+  background-color: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Tarjetas de Pilares Superpuestas ---------- */
+
+.inicial-features-wrapper {
+  position: relative;
+  z-index: 4;
+}
+
+.inicial-features-row {
+  margin-top: -100px;
+}
+
+.inicial-pilar-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.inicial-pilar-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.inicial-pilar-img-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.inicial-pilar-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.inicial-pilar-card:hover .inicial-pilar-img-wrap img {
+  transform: scale(1.08);
+}
+
+.inicial-pilar-content {
+  padding: 1.5rem;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.inicial-pilar-content h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 0.75rem;
+}
+
+.inicial-pilar-content p {
+  font-size: 0.95rem;
+  color: #666666;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* ============================================
+   Sección Información (Inicial)
+   ============================================ */
+
+.inicial-info-container-sec {
+  position: relative;
+  width: 100%;
+  padding: 4rem 0;
+  background-color: #f7f9fa; 
+  color: #333333;
+  overflow: hidden;
+}
+
+.inicial-info-container-sec::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--inicial-pattern-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  opacity: 0.04; 
+  pointer-events: none;
+  z-index: 1;
+}
+
+.inicial-section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #2b2b2b;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.inicial-custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.inicial-custom-list li {
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+  color: #4a4a4a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.inicial-custom-list li i {
+  color: #2b2b2b; 
+  font-size: 1.2rem;
+}
+
+.inicial-img-box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+.inicial-img-box::before,
+.inicial-img-box::after {
+  display: none !important;
+  content: none !important;
+}
+
+.inicial-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.inicial-text-desc {
+  color: #000000;
+  text-align: left;
+}
+
+/* ============================================
+   Responsive (Celulares y Tablets)
+   ============================================ */
+
+@media (max-width: 767.98px) {
+  .inicial-hero-section {
+    margin-bottom: 2rem;
+  }
+
+  .inicial-hero-section .inicial-hero-bg {
+    height: 75vw;
+    min-height: 320px;
+    align-items: center;
+  }
+
+  .inicial-hero-title {
+    font-size: 2rem;
+  }
+
+  .inicial-hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .inicial-hero-text .inicial-btn-translucent {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .inicial-features-row {
+    margin-top: -30px;
+  }
+  
+  .inicial-pilar-content {
+    padding: 1.2rem;
+    text-align: left;
+  }
+
+  .inicial-info-container-sec {
+    padding: 3rem 0;
+  }
+
+  .inicial-section-title {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .inicial-info-container-sec .inicial-text-desc {
+    text-align: left;
+  }
+
+  .inicial-custom-list li {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .inicial-cta-wrapper {
+    text-align: left !important;
+  }
+}
