@@ -31,7 +31,7 @@ const NivelInicial = () => {
                 Estimulando la creatividad, el pensamiento crítico y la socialización en un espacio dinámico y feliz.
               </p>
               {/* Botón translúcido alineado a la izquierda */}
-              <a href="#admisiones" className="inicial-btn inicial-btn-translucent mt-3">
+              <a href="/admisiones" className="inicial-btn inicial-btn-translucent mt-3">
                 Admisiones
               </a>
             </div>
@@ -103,7 +103,7 @@ const NivelInicial = () => {
 
                 {/* Botón al final de la información alineado a la izquierda */}
                 <div className="inicial-cta-wrapper text-start">
-                  <a href="#admisiones" className="inicial-btn inicial-btn-solid">
+                  <a href="/admisiones" className="inicial-btn inicial-btn-solid">
                     Admisiones
                   </a>
                 </div>

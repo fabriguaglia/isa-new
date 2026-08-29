@@ -133,11 +133,11 @@ const Footer = () => {
             <div className="col-6 col-md-2 footer-col-links">
               <h4 className="footer-heading">Niveles</h4>
               <ul className="footer-links-list">
-                <li><a href="#niveles">Maternal</a></li>
-                <li><a href="#niveles">Inicial</a></li>
-                <li><a href="#niveles">Primario</a></li>
-                <li><a href="#niveles">Secundario</a></li>
-                <li><a href="#niveles">Terciario</a></li>
+                <li><a href="/maternal">Maternal</a></li>
+                <li><a href="/inicial">Inicial</a></li>
+                <li><a href="/primario">Primario</a></li>
+                <li><a href="/secundario">Secundario</a></li>
+                <li><a href="/terciario">Terciario</a></li>
               </ul>
             </div>
 

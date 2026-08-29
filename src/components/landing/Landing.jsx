@@ -129,6 +129,7 @@ const NIVELES = [
   {
     titulo: 'Maternal',
     foto: MaternalImg,
+    link: "/maternal",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="7" r="4"/>
@@ -139,6 +140,7 @@ const NIVELES = [
   {
     titulo: 'Inicial',
     foto: InicialImg,
+    link: "/inicial",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
@@ -149,6 +151,7 @@ const NIVELES = [
   {
     titulo: 'Primario',
     foto: PrimarioImg,
+    link: "/primario",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
@@ -159,6 +162,7 @@ const NIVELES = [
   {
     titulo: 'Secundario',
     foto: SecundarioImg,
+    link: "/secundario",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
@@ -169,6 +173,7 @@ const NIVELES = [
   {
     titulo: 'Terciario',
     foto: TerciarioImg,
+    link: "/terciario",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
@@ -368,7 +373,7 @@ const Landing = () => {
         <div className="container">
           <div className="niveles-grid">
             {NIVELES.map((nivel, index) => (
-              <div className="nivel-card" key={index}>
+              <a href={nivel.link} className="nivel-card text-decoration-none" key={index}>
                 <div className="nivel-card-bg">
                   <img src={nivel.foto} alt={nivel.titulo} className="nivel-card-img" />
                   <div className="nivel-card-fade" />
@@ -377,9 +382,9 @@ const Landing = () => {
                   <div className="nivel-icon-circle">
                     {nivel.icon}
                   </div>
-                  <h3 id="futuro" className="nivel-title">{nivel.titulo}</h3>
+                  <h3 className="nivel-title">{nivel.titulo}</h3>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

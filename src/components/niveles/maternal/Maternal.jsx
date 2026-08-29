@@ -31,7 +31,7 @@ const NivelMaternal = () => {
                 El primer paso en el viaje del aprendizaje, en un entorno seguro, cálido y lleno de amor.
               </p>
               {/* Botón translúcido alineado a la izquierda */}
-              <a href="#admisiones" className="maternal-btn maternal-btn-translucent mt-3">
+              <a href="/admisiones" className="maternal-btn maternal-btn-translucent mt-3">
                 Admisiones
               </a>
             </div>
