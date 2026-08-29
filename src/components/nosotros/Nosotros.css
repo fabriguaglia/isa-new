@@ -1,0 +1,278 @@
+/* ============================================
+   Nosotros Hero — Estático
+   ============================================ */
+
+.nosotros-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.nosotros-hero {
+  position: relative;
+  width: 100%;
+  /* Separación añadida para despegar la galería de la sección de 45 Años */
+  margin-bottom: 4rem; 
+}
+
+.hero-static-bg {
+  position: relative;
+  width: 100%;
+  height: 620px;
+  background-size: cover;
+  background-position: center;
+  background-color: #1a1a1a;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0.45) 35%,
+    rgba(0, 0, 0, 0.25) 60%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.hero-text {
+  max-width: 900px;
+  color: #ffffff;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------- Galería inferior superpuesta ---------- */
+
+.hero-gallery-wrapper {
+  position: relative;
+  z-index: 4;
+}
+
+.hero-gallery {
+  margin-top: -120px;
+}
+
+.gallery-card-nosotros {
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  aspect-ratio: 4 / 3;
+  background-color: #fff;
+}
+
+.gallery-card-nosotros img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  /* Transición añadida para el hover */
+  transition: transform 0.4s ease;
+}
+
+/* Efecto hover añadido a las imágenes */
+.gallery-card-nosotros:hover img {
+  transform: scale(1.08);
+}
+
+/* ============================================
+   Sección Fundadores / 45 Años (Estilo Tech)
+   ============================================ */
+
+.fundadores-section {
+  position: relative;
+  width: 100%;
+  /* PADDING REDUCIDO: antes era 6rem 0 5rem */
+  padding: 3rem 0 3rem;
+  background-color: #2b2b2b; 
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.fundadores-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--tech-bg-img);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  opacity: 30%; 
+  pointer-events: none;
+  z-index: 1;
+}
+
+.fundadores-container {
+  position: relative;
+  z-index: 2;
+}
+
+.fundadores-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.fundadores-main-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.fundadores-cursive {
+  font-family: 'Brush Script MT', 'Dancing Script', cursive;
+  font-size: 4.5rem;
+  font-weight: 400;
+  display: block;
+  margin-bottom: -15px;
+  letter-spacing: 1px;
+}
+
+.fundadores-logo-45 {
+  width: 130px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Reutilización del contenedor de imagen de la sección tech */
+.tech-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+.tech-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Bloque de texto y citas */
+.quote-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.quote-author {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
+}
+
+.quote-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+
+@media (max-width: 767.98px) {
+  .nosotros-hero {
+    margin-bottom: 2rem; /* Separación adaptada para móviles */
+  }
+
+  .hero-static-bg {
+    height: 75vw;
+    min-height: 300px;
+    max-height: 400px;
+  }
+
+  .hero-content {
+    padding: 1rem 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .hero-gallery {
+    margin-top: -30px;
+  }
+
+  .gallery-card-nosotros {
+    border-width: 4px;
+  }
+
+  .fundadores-section {
+    /* PADDING REDUCIDO EN MÓVILES: antes era 3.5rem 0 3rem */
+    padding: 2rem 0 2rem;
+  }
+
+  .fundadores-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .fundadores-main-title {
+    font-size: 1.5rem;
+  }
+
+  .fundadores-cursive {
+    font-size: 3rem;
+    margin-bottom: -5px;
+  }
+
+  .fundadores-logo-45 {
+    width: 90px;
+  }
+
+  .quote-title {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .quote-author, .quote-text {
+    text-align: center;
+  }
+}

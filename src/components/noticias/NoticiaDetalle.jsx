@@ -33,8 +33,6 @@ const imagenesExtraMap = {
   extra5: Extra5Img,
 };
 
-// 📌 Agregá aquí las claves de las imágenes (tanto de noticias principales como extras) 
-// que querés que se muestren completas en PC sin recortes.
 const imagenesEspecialesPC = ['extra5', 'noticia3', 'noticia4', 'noticia2', 'extra2']; 
 
 const crearSlug = (texto) => {
