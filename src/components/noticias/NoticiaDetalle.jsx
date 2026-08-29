@@ -33,6 +33,10 @@ const imagenesExtraMap = {
   extra5: Extra5Img,
 };
 
+// 📌 Agregá aquí las claves de las imágenes (tanto de noticias principales como extras) 
+// que querés que se muestren completas en PC sin recortes.
+const imagenesEspecialesPC = ['extra5', 'noticia3', 'noticia4', 'noticia2', 'extra2']; 
+
 const crearSlug = (texto) => {
   if (!texto) return '';
   return texto
@@ -67,6 +71,9 @@ const NoticiaDetalle = () => {
     );
   }
 
+  // Verificamos si la imagen principal de esta noticia es especial
+  const esImagenPrincipalEspecial = imagenesEspecialesPC.includes(noticia.imagenKey);
+
   return (
     <div className="container my-5" style={{ maxWidth: '800px' }}>
       <Link to="/noticias/pagina/1" className="btn btn-outline-secondary mb-4 btn-sm rounded-pill px-3">
@@ -78,11 +85,12 @@ const NoticiaDetalle = () => {
         <h1 className="fw-bold display-6 mt-1" style={{ color: '#334779' }}>{noticia.titulo}</h1>
       </div>
 
-      <div className="mb-4 rounded-3 overflow-hidden shadow-sm noticia-img-detalle-pc">
+      {/* Imagen Principal de la Noticia */}
+      <div className={`mb-4 rounded-3 overflow-hidden shadow-sm noticia-img-detalle-pc ${esImagenPrincipalEspecial ? 'contenedor-imagen-especial' : ''}`}>
         <img 
           src={imagenesMap[noticia.imagenKey]} 
           alt={noticia.titulo} 
-          className="w-100 object-fit-cover noticia-img-real" 
+          className={`w-100 noticia-img-real ${esImagenPrincipalEspecial ? 'imagen-especial-completa' : 'object-fit-cover'}`} 
         />
       </div>
 
@@ -100,15 +108,16 @@ const NoticiaDetalle = () => {
           }
 
           if (bloque.tipo === 'imagen') {
-            const esPortadaLibro = bloque.url === 'extra5';
+            // Verificamos si esta imagen extra está en el listado especial
+            const esImagenExtraEspecial = imagenesEspecialesPC.includes(bloque.url);
 
             return (
               <figure key={index} className="my-5 text-center">
-                <div className={`rounded-3 overflow-hidden shadow-sm mb-2 noticia-img-detalle-pc ${esPortadaLibro ? 'contenedor-portada-libro' : ''}`}>
+                <div className={`rounded-3 overflow-hidden shadow-sm mb-2 noticia-img-detalle-pc ${esImagenExtraEspecial ? 'contenedor-imagen-especial' : ''}`}>
                   <img 
                     src={imagenesExtraMap[bloque.url]} 
                     alt={bloque.caption || 'Imagen interior'} 
-                    className={`w-100 noticia-img-real ${esPortadaLibro ? 'imagen-portada-libro' : 'object-fit-cover'}`} 
+                    className={`w-100 noticia-img-real ${esImagenExtraEspecial ? 'imagen-especial-completa' : 'object-fit-cover'}`} 
                   />
                 </div>
                 {bloque.caption && (

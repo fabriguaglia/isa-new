@@ -5,7 +5,6 @@ import Logo from '../assets/images/logo-blanco.png';
 const Footer = () => {
   return (
     <footer className="site-footer">
-      {/* ---------- Barra superior de Redes Sociales (#D1D5D6) ---------- */}
       <div className="footer-social-bar">
         <div className="container footer-social-container">
           <div className="footer-social-titles">
@@ -26,25 +25,13 @@ const Footer = () => {
             </a>
 
             {/* Facebook */}
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer-social-item">
+            <a href="https://www.facebook.com/InstitutoSantaAnaPacheco" target="_blank" rel="noopener noreferrer" className="footer-social-item">
               <div className="footer-icon-circle">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
                 </svg>
               </div>
               <span className="footer-icon-label">FACEBOOK</span>
-            </a>
-
-            {/* LinkedIn */}
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="footer-social-item">
-              <div className="footer-icon-circle">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                  <rect x="2" y="9" width="4" height="12"/>
-                  <circle cx="4" cy="4" r="2"/>
-                </svg>
-              </div>
-              <span className="footer-icon-label">LINKEDIN</span>
             </a>
 
             {/* Instagram */}
@@ -60,7 +47,7 @@ const Footer = () => {
             </a>
 
             {/* YouTube */}
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="footer-social-item">
+            <a href="https://www.youtube.com/@institutosantaana3534/" target="_blank" rel="noopener noreferrer" className="footer-social-item">
               <div className="footer-icon-circle">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
@@ -69,6 +56,19 @@ const Footer = () => {
               </div>
               <span className="footer-icon-label">YOUTUBE</span>
             </a>
+
+            {/* LinkedIn */}
+            <a href="https://www.linkedin.com/company/isapacheco/" target="_blank" rel="noopener noreferrer" className="footer-social-item">
+              <div className="footer-icon-circle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                  <rect x="2" y="9" width="4" height="12"/>
+                  <circle cx="4" cy="4" r="2"/>
+                </svg>
+              </div>
+              <span className="footer-icon-label">LINKEDIN</span>
+            </a>
+
           </div>
         </div>
       </div>
@@ -146,10 +146,10 @@ const Footer = () => {
               <h4 className="footer-heading">Propuesta</h4>
               <ul className="footer-links-list">
                 <li><a href="#futuro">Educación del Futuro</a></li>
-                <li><a href="#salidas">Salidas Educativas</a></li>
-                <li><a href="#competencias">Competencias Escolares</a></li>
-                <li><a href="#puentes">Puentes al Futuro</a></li>
-                <li><a href="#multilingue">Propuesta Multilingüe</a></li>
+                <li><a href="/noticias/salidas-educativas">Salidas Educativas</a></li>
+                <li><a href="/noticias/competencias-escolares">Competencias Escolares</a></li>
+                <li><a href="/noticias/puentes-al-futuro">Puentes al Futuro</a></li>
+                <li><a href="/noticias/propuesta-multilingue">Propuesta Multilingüe</a></li>
               </ul>
             </div>
 
@@ -157,10 +157,10 @@ const Footer = () => {
             <div className="col-12 col-md-2 footer-col-links">
               <h4 className="footer-heading">Institucional</h4>
               <ul className="footer-links-list">
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#inscripciones">Inscripciones</a></li>
-                <li><a href="#convenios">Convenios</a></li>
-                <li><a href="#noticias">Noticias y Novedades</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+                <li><a href="/admisiones">Inscripciones</a></li>
+                <li><a href="/convenios">Convenios</a></li>
+                <li><a href="/noticias">Noticias y Novedades</a></li>
               </ul>
             </div>
           </div>

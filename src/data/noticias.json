@@ -3,6 +3,7 @@
     "id": 1,
     "titulo": "Salidas Educativas",
     "fecha": "Actualidad",
+    "tema": "Experiencias.",
     "resumen": "Experiencias en campo y visitas que llevan el aprendizaje más allá del aula.",
     "imagenKey": "noticia1",
     "contenido": [
@@ -28,6 +29,7 @@
   {
     "id": 2,
     "titulo": "Competencias Escolares",
+    "tema": "Desafíos y torneos.",
     "fecha": "Actualidad",
     "resumen": "Desafíos académicos y torneos que potencian la superación.",
     "imagenKey": "noticia2",
@@ -54,6 +56,7 @@
   {
     "id": 3,
     "titulo": "Puentes al Futuro",
+    "tema": "Red de instituciones.",
     "fecha": "Actualidad",
     "resumen": "Red de instituciones de educación superior que acompañan a nuestros egresados.",
     "imagenKey": "noticia4",
@@ -64,7 +67,7 @@
       },
       {
         "tipo": "parrafo",
-        "texto": "Mediante charlas informativas, visitas a campus universitarios y convenios especiales, facilitamos el acceso a herramientas de planificación para su próximo horizonte profesional."
+        "texto": "Mediante charlas informativas, visitas a campus universitarios y convenios especiales, como el <strong>acceso a becas para nuestros estudiantes</strong>, facilitamos el acceso a herramientas para su próximo horizonte profesional."
       },
       {
         "tipo": "imagen",
@@ -80,6 +83,7 @@
   {
     "id": 4,
     "titulo": "Propuesta Multilingüe",
+    "tema": "Aprendizaje de idiomas.",
     "fecha": "Actualidad",
     "resumen": "Enseñanza oficial en español junto con el aprendizaje de varios idiomas.",
     "imagenKey": "noticia3",
@@ -107,7 +111,7 @@
     "id": 5,
     "titulo": "Orgullo Santa Ana",
     "tema": "Logros de nuestros alumnos",
-    "fecha": "Viernes 28 de agosto de 2026",
+    "fecha": "Viernes, 28 de agosto de 2026",
     "resumen": "Nuestra alumna de 5°. año Isis Famularo lanza su libro “La prueba de que fui poema”",
     "imagenKey": "noticia5",
     "contenido": [

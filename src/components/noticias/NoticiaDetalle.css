@@ -3,7 +3,7 @@
   height: auto; 
 }
 
-/* SOLO EN PC: Aplicamos la altura fija y el recorte para las imágenes generales */
+/* SOLO EN PC: Aplicamos la altura fija y el recorte por defecto para las imágenes normales */
 @media (min-width: 992px) {
   .noticia-img-detalle-pc {
     height: 500px !important;
@@ -16,13 +16,14 @@
     object-fit: cover !important;
   }
 
-  /* REGLA ESPECIAL: Para que la portada del libro (extra5) se vea completa sin recortes en PC */
-  .contenedor-portada-libro {
+  /* REGLA ESPECIAL: Para que cualquier imagen marcada en el array se vea completa sin recortes en PC */
+  .contenedor-imagen-especial {
     height: auto !important;
     background-color: transparent !important;
+    overflow: visible !important;
   }
 
-  .imagen-portada-libro {
+  .imagen-especial-completa {
     height: auto !important;
     max-height: 500px !important;
     object-fit: contain !important;
