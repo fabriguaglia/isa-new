@@ -1,0 +1,46 @@
+.seccion-contacto {
+  position: relative;
+  background-color: #f8f9fa; /* Color de respaldo */
+  overflow: hidden;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  /* Imagen de fondo en tamaño normal */
+  background-image: url('../assets/images/landing/carrusel/carrusel-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Asegura que el contenido interno quede por encima del fondo */
+.seccion-contacto .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Título y subtítulo blancos con una ligera sombra para que resalten sobre la imagen */
+.seccion-contacto h1,
+.seccion-contacto p.text-muted {
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta-contacto {
+  /* Fondo translúcido (podes bajar o subir el último número 0.25 para ajustar la transparencia del vidrio) */
+  background-color: rgba(255, 255, 255, 0.25) !important;
+  /* Efecto blur de vidrio esmerilado */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+
+.tarjeta-contacto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2) !important;
+  /* Se opaca un poco más al pasar el mouse para mejorar la lectura */
+  background-color: rgba(255, 255, 255, 0.4) !important; 
+}
+
+.text-primary-custom {
+  color: #ffffff;
+}
