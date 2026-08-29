@@ -145,7 +145,7 @@ const Footer = () => {
             <div className="col-6 col-md-2 footer-col-links">
               <h4 className="footer-heading">Propuesta</h4>
               <ul className="footer-links-list">
-                <li><a href="#futuro">Educación del Futuro</a></li>
+                <li><a href="/nosotros">Sobre Nosotros</a></li>
                 <li><a href="/noticias/salidas-educativas">Salidas Educativas</a></li>
                 <li><a href="/noticias/competencias-escolares">Competencias Escolares</a></li>
                 <li><a href="/noticias/puentes-al-futuro">Puentes al Futuro</a></li>
@@ -158,7 +158,7 @@ const Footer = () => {
               <h4 className="footer-heading">Institucional</h4>
               <ul className="footer-links-list">
                 <li><a href="/contacto">Contacto</a></li>
-                <li><a href="/admisiones">Inscripciones</a></li>
+                <li><a href="/admisiones">Admisiones</a></li>
                 <li><a href="/convenios">Convenios</a></li>
                 <li><a href="/noticias">Noticias y Novedades</a></li>
               </ul>
