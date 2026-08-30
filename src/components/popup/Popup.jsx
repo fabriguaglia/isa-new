@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Popup.css';
 
-// Reemplaza con la ruta de tu imagen de anuncio
-import ImagenAnuncio from '../assets/images/popup.png'; 
+// Importa aquí tus dos imágenes distintas
+import ImagenDesktop from '../assets/images/popup.png'; // Imagen para PC / Tablets grandes
+import ImagenMobile from '../assets/images/popup2.png';  // Imagen exclusiva para Celulares
 
 const PopupAnuncio = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,14 +27,17 @@ const PopupAnuncio = () => {
           onClick={cerrarPopup}
           aria-label="Cerrar"
         >
-          {/* Usamos un SVG vectorial limpio y garantizado para que la cruz se dibuje siempre */}
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"></line>
             <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
         </button>
         <div className="popup-image-container">
-          <img src={ImagenAnuncio} alt="Anuncio importante" className="popup-img" />
+          {/* Usamos picture para alternar la imagen de forma nativa según el ancho de pantalla */}
+          <picture className="popup-picture">
+            <source media="(max-width: 768px)" srcSet={ImagenMobile} />
+            <img src={ImagenDesktop} alt="Anuncio importante" className="popup-img" />
+          </picture>
         </div>
       </div>
     </div>
