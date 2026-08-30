@@ -94,9 +94,9 @@ const NivelSecundario = () => {
 
           <div className="row g-4">
             
-            {/* 1. Técnico en Programación */}
+            {/* 1. Técnico en Programación (Azul Tec) */}
             <div className="col-12">
-              <div className="secundario-mod-card">
+              <div className="secundario-mod-card secundario-mod-programacion">
                 <div className="row align-items-center g-0">
                   <div className="col-12 col-lg-5">
                     <div className="secundario-mod-imgs-grid">
@@ -123,9 +123,9 @@ const NivelSecundario = () => {
               </div>
             </div>
 
-            {/* 2. Bachiller en Comunicaciones */}
+            {/* 2. Bachiller en Comunicaciones (Púrpura / Violeta) */}
             <div className="col-12">
-              <div className="secundario-mod-card">
+              <div className="secundario-mod-card secundario-mod-comunicacion">
                 <div className="row align-items-center g-0">
                   <div className="col-12 col-lg-5 order-lg-2">
                     <div className="secundario-mod-imgs-grid">
@@ -137,7 +137,7 @@ const NivelSecundario = () => {
                     <div className="secundario-mod-content text-start">
                       <span className="secundario-badge">4° a 6° Año</span>
                       <h3 className="secundario-mod-title mt-2">Bachillerato en Comunicaciones</h3>
-                    <p className="secundario-text-desc mt-3">
+                      <p className="secundario-text-desc mt-3">
                         Enfoque integral sobre los medios masivos, la producción de contenidos, la investigación periodística y la comunicación institucional digital.
                       </p>
                       <ul className="secundario-custom-list mt-3">
@@ -151,9 +151,9 @@ const NivelSecundario = () => {
               </div>
             </div>
 
-            {/* 3. Turismo */}
+            {/* 3. Turismo (Verde Naturaleza/Eco) */}
             <div className="col-12">
-              <div className="secundario-mod-card">
+              <div className="secundario-mod-card secundario-mod-turismo">
                 <div className="row align-items-center g-0">
                   <div className="col-12 col-lg-5">
                     <div className="secundario-mod-imgs-grid">

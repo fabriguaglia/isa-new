@@ -178,7 +178,6 @@
 }
 
 .secundario-mod-card {
-  background-color: #f8f9fa;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
@@ -209,7 +208,6 @@
 
 .secundario-badge {
   display: inline-block;
-  background-color: #2b2b2b;
   color: #ffffff;
   font-size: 0.8rem;
   font-weight: 700;
@@ -222,8 +220,54 @@
 .secundario-mod-title {
   font-size: 1.75rem;
   font-weight: 800;
-  color: #2b2b2b;
   line-height: 1.2;
+}
+
+/* --- Personalización de Colores por Modalidad --- */
+
+/* 1. Programación: Azul Técnico */
+.secundario-mod-programacion {
+  background-color: #f0f4f9;
+  border-color: #d0e1f9;
+}
+.secundario-mod-programacion .secundario-badge {
+  background-color: #0d6efd;
+}
+.secundario-mod-programacion .secundario-mod-title {
+  color: #0b5ed7;
+}
+.secundario-mod-programacion .secundario-custom-list li i {
+  color: #0d6efd;
+}
+
+/* 2. Comunicación: Púrpura / Violeta */
+.secundario-mod-comunicacion {
+  background-color: #f6f0f9;
+  border-color: #e5d0f9;
+}
+.secundario-mod-comunicacion .secundario-badge {
+  background-color: #6f42c1;
+}
+.secundario-mod-comunicacion .secundario-mod-title {
+  color: #59359a;
+}
+.secundario-mod-comunicacion .secundario-custom-list li i {
+  color: #6f42c1;
+}
+
+/* 3. Turismo: Verde Naturaleza */
+.secundario-mod-turismo {
+  background-color: #f0f7f2;
+  border-color: #cce8d3;
+}
+.secundario-mod-turismo .secundario-badge {
+  background-color: #198754;
+}
+.secundario-mod-turismo .secundario-mod-title {
+  color: #146c43;
+}
+.secundario-mod-turismo .secundario-custom-list li i {
+  color: #198754;
 }
 
 /* ============================================
