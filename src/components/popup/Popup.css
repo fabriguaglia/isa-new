@@ -1,0 +1,112 @@
+/* ============================================
+   Estilos para el Pop-up de Anuncio
+   ============================================ */
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 99999; /* Asegura que esté por encima de cualquier otro elemento */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: fadeInPopup 0.3s ease forwards;
+}
+
+.popup-content {
+  position: relative;
+  /* Ancho masivo en PC para que ocupe gran parte de la pantalla */
+  max-width: 1100px; 
+  width: 95%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: scaleUpPopup 0.3s ease forwards;
+}
+
+.popup-image-container {
+  width: 100%;
+  border-radius: 16px;
+  /* Quitamos el overflow hidden de aquí para que la cruz no quede atrapada */
+  background-color: #ffffff;
+  display: flex;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+}
+
+.popup-img {
+  width: 100%;
+  height: auto;
+  /* Altura máxima generosa para pantallas de PC grandes */
+  max-height: 90vh; 
+  object-fit: contain;
+  display: block;
+  border-radius: 16px;
+}
+
+/* Cruz de cierre rediseñada, grande y garantizada para verse */
+.popup-close-btn {
+  position: absolute;
+  top: -22px;
+  right: -22px;
+  background-color: #000000; /* Fondo negro puro */
+  color: #ffffff; /* Icono blanco */
+  border: 3px solid #ffffff; /* Borde blanco grueso para recortarse contra cualquier fondo */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  z-index: 100000; /* Superpone la cruz por encima de todo */
+  font-size: 1.25rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.popup-close-btn:hover {
+  background-color: #333333;
+  transform: scale(1.12);
+}
+
+/* Animaciones de entrada */
+@keyframes fadeInPopup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUpPopup {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Adaptación para celulares */
+@media (max-width: 768px) {
+  .popup-content {
+    max-width: 95%;
+    width: 100%;
+  }
+
+  .popup-close-btn {
+    top: -15px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    border-width: 2px;
+  }
+}

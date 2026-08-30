@@ -12,6 +12,7 @@ import Inicial from "./components/niveles/inicial/Inicial.jsx";
 import Primario from "./components/niveles/primario/Primario.jsx";
 import Secundario from "./components/niveles/secundario/Secundario.jsx";
 import Terciario from "./components/niveles/terciario/Terciario.jsx";
+import Convenios from "./components/convenios/Convenios.jsx";
 
 import Maternal from "./components/niveles/maternal/Maternal.jsx";
 
@@ -36,6 +37,8 @@ function App() {
         <Route path="/primario" element={<Primario />} />
         <Route path="/secundario" element={<Secundario />} />
         <Route path="/terciario" element={<Terciario />} />
+
+        <Route path="/convenios" element={<Convenios />} />
 
       </Routes>
 

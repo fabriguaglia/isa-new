@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import './Landing.css';
+import Popup from '../popup/Popup.jsx';
 
 // Imágenes para el carrusel
 import Carrusel1 from '../assets/images/landing/carrusel/carrusel-1.jpg';
@@ -288,6 +289,7 @@ const Landing = () => {
 
   return (
     <>
+      <Popup />
       <section className="landing-hero">
         <div className="hero-carousel">
           {SLIDES.map((slide, index) => (
