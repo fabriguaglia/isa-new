@@ -429,9 +429,7 @@ const Landing = () => {
             académica para formar a las mentes del mañana.
           </p>
 
-          <a href="#link-tech" className="btn tech-btn mt-2">
-            Conocé más
-          </a>
+          {/* <a href="#link-tech" className="btn tech-btn mt-2"> Conocé más </a> */}
 
           <div className="tech-brand-logos">
             <img src={CiscoLogo} alt="Cisco" className="tech-brand-img" />
