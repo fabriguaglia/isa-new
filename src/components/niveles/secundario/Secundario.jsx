@@ -107,7 +107,7 @@ const NivelSecundario = () => {
                   <div className="col-12 col-lg-7 p-4 p-md-5">
                     <div className="secundario-mod-content text-start">
                       <span className="secundario-badge">4° a 7° Año</span>
-                      <h3 className="secundario-mod-title mt-2">Técnico en Programación</h3>
+                      <h3 className="secundario-mod-title mt-2">Tecnicatura en Programación</h3>
                       <p className="secundario-text-desc mt-3">
                         Una formación técnica de vanguardia orientada al desarrollo de software, infraestructura y seguridad informática para dar respuesta al mercado tecnológico actual.
                       </p>
@@ -136,7 +136,7 @@ const NivelSecundario = () => {
                   <div className="col-12 col-lg-7 order-lg-1 p-4 p-md-5">
                     <div className="secundario-mod-content text-start">
                       <span className="secundario-badge">4° a 6° Año</span>
-                      <h3 className="secundario-mod-title mt-2">Bachiller en Comunicaciones</h3>
+                      <h3 className="secundario-mod-title mt-2">Bachillerato en Comunicaciones</h3>
                     <p className="secundario-text-desc mt-3">
                         Enfoque integral sobre los medios masivos, la producción de contenidos, la investigación periodística y la comunicación institucional digital.
                       </p>
@@ -164,7 +164,7 @@ const NivelSecundario = () => {
                   <div className="col-12 col-lg-7 p-4 p-md-5">
                     <div className="secundario-mod-content text-start">
                       <span className="secundario-badge">1° a 6° Año</span>
-                      <h3 className="secundario-mod-title mt-2">Modalidad Turismo</h3>
+                      <h3 className="secundario-mod-title mt-2">Turismo</h3>
                       <p className="secundario-text-desc mt-3">
                         Capacitación orientada al conocimiento del patrimonio cultural, la gestión de destinos turísticos y la atención global con fuerte énfasis plurilingüe.
                       </p>
