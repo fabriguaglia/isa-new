@@ -11,7 +11,7 @@ import Pilar3 from '../../assets/images/maternal/maternal-3.jpg';
 
 // Imágenes de la sección de información
 import PatternBg from '../../assets/images/nosotros/sobre-bg.png'; 
-import InfoInicialImg from '../../assets/images/maternal/maternal-info.png';
+import InfoInicialImg from '../../assets/images/inicial/inicial-info.jpg';
 
 const NivelInicial = () => {
   return (
