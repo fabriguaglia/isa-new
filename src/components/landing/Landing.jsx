@@ -39,6 +39,7 @@ import Noticia3 from '../assets/images/landing/noticias/noticia-3.png';
 import Noticia4 from '../assets/images/landing/noticias/noticia-4.png';
 import Noticia5 from '../assets/images/landing/noticias/noticia-5.jpg';
 import Noticia6 from '../assets/images/landing/noticias/noticia-6.jpg';
+import Noticia7 from '../assets/images/landing/noticias/noticia-7.jpg';
 
 
 // ==========================================
@@ -77,6 +78,7 @@ const imagenesNoticiasMap = {
   noticia4: Noticia4,
   noticia5: Noticia5,
   noticia6: Noticia6,
+  noticia7: Noticia7,
 };
 
 // Función auxiliar para generar slugs limpios para las URLs de noticias
@@ -113,12 +115,12 @@ const SLIDES = [
     image: Carrusel4,
     titulo: 'Charlas con especialistas',
     subtitulo: 'Profesionales y referentes de distintos rubros visitan el colegio para compartir su experiencia',
-    link: '#link4',
+    link: '/noticias/charlas-y-visitas-profesionales',
   },
   {
     image: Carrusel5,
-    titulo: 'Pasantías y prácticas profesionales',
-    subtitulo: 'Primeras experiencias laborales que conectan a los estudiantes con el mundo del trabajo',
+    titulo: 'Convenios con empresas e instituciones',
+    subtitulo: 'Nuestros estudiantes acceden a experiencias de aprendizaje únicas y oportunidades de desarrollo profesional.',
     link: '/convenios',
   },
 ];

@@ -10,6 +10,7 @@ import Noticia3Img from '../assets/images/landing/noticias/noticia-3.png';
 import Noticia4Img from '../assets/images/landing/noticias/noticia-4.png';
 import Noticia5Img from '../assets/images/landing/noticias/noticia-5.jpg';
 import Noticia6Img from '../assets/images/landing/noticias/noticia-6.jpg';
+import Noticia7Img from '../assets/images/landing/noticias/noticia-7.jpg';
 
 // Imágenes extra para el interior del texto
 import Extra1Img from '../assets/images/landing/noticias/extra-1.png';
@@ -18,6 +19,7 @@ import Extra3Img from '../assets/images/landing/noticias/extra-3.png';
 import Extra4Img from '../assets/images/landing/noticias/extra-4.png';
 import Extra5Img from '../assets/images/landing/noticias/extra-5.jpg';
 import Extra6Img from '../assets/images/landing/noticias/extra-6.jpg';
+import Extra7Img from '../assets/images/landing/noticias/extra-7.jpg';
 
 const imagenesMap = {
   noticia1: Noticia1Img,
@@ -26,6 +28,7 @@ const imagenesMap = {
   noticia4: Noticia4Img,
   noticia5: Noticia5Img,
   noticia6: Noticia6Img,
+  noticia7: Noticia7Img,
 };
 
 const imagenesExtraMap = {
@@ -35,9 +38,10 @@ const imagenesExtraMap = {
   extra4: Extra4Img,
   extra5: Extra5Img,
   extra6: Extra6Img,
+  extra7: Extra7Img,
 };
 
-const imagenesEspecialesPC = ['extra5', 'noticia3', 'noticia4', 'noticia2', 'extra2', 'extra6']; // Lista de imágenes que deben mostrarse completas en PC
+const imagenesEspecialesPC = ['extra5', 'noticia3', 'noticia4', "noticia5",'noticia2', 'extra4', 'extra6']; // Lista de imágenes que deben mostrarse completas en PC
 
 const crearSlug = (texto) => {
   if (!texto) return '';

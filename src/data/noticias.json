@@ -28,28 +28,28 @@
   },
   {
     "id": 2,
-    "titulo": "Competencias Escolares",
-    "tema": "Desafíos y torneos.",
+    "titulo": "Propuesta Multilingüe",
+    "tema": "Aprendizaje de idiomas.",
     "fecha": "Actualidad",
-    "resumen": "Desafíos académicos y torneos que potencian la superación.",
+    "resumen": "Enseñanza oficial en español junto con el aprendizaje de varios idiomas.",
     "imagenKey": "noticia2",
     "contenido": [
       {
         "tipo": "parrafo",
-        "texto": "A través de desafíos académicos, olimpiadas y torneos, promovemos la participación de nuestros estudiantes en <strong>competencias escolares</strong> que potencian el esfuerzo, el <strong>trabajo en equipo</strong> y la superación personal."
+        "texto": "Nuestra <strong>propuesta multilingüe</strong> combina la sólida formación oficial en español con el <strong>aprendizaje estructurado de varios idiomas</strong>, preparando a los alumnos con herramientas globales de comunicación para un mundo interconectado."
       },
       {
         "tipo": "parrafo",
-        "texto": "Cada certamen representa una oportunidad única para medir capacidades, aprender a gestionar la concentración bajo presión y compartir experiencias con pares de otras instituciones."
+        "texto": "Fomentamos la fluidez oral y la comprensión intercultural desde temprana edad, integrando recursos tecnológicos y metodologías lúdicas adaptadas a cada nivel."
       },
       {
         "tipo": "imagen",
         "url": "extra2",
-        "caption": "Stand del proyecto Sky-Search en la Feria ACTE 2026."
+        "caption": "Sede de la Asociación Argentina de Cultura Inglesa"
       },
       {
         "tipo": "parrafo",
-        "texto": "Celebramos cada logro colectivo e individual, impulsando a los jóvenes a <strong>confiar en su potencial</strong> y a seguir preparándose con entusiasmo para futuros desafíos."
+        "texto": "De esta forma, abrimos puertas hacia un futuro sin fronteras, dotando a los estudiantes de <strong>competencias clave</strong> altamente valoradas en el ámbito académico y laboral contemporáneo."
       }
     ]
   },
@@ -59,7 +59,7 @@
     "tema": "Red de instituciones.",
     "fecha": "Actualidad",
     "resumen": "Red de instituciones de educación superior que acompañan a nuestros egresados.",
-    "imagenKey": "noticia4",
+    "imagenKey": "noticia3",
     "contenido": [
       {
         "tipo": "parrafo",
@@ -82,28 +82,28 @@
   },
   {
     "id": 4,
-    "titulo": "Propuesta Multilingüe",
-    "tema": "Aprendizaje de idiomas.",
+    "titulo": "Competencias Escolares",
+    "tema": "Desafíos y torneos.",
     "fecha": "Actualidad",
-    "resumen": "Enseñanza oficial en español junto con el aprendizaje de varios idiomas.",
-    "imagenKey": "noticia3",
+    "resumen": "Desafíos académicos y torneos que potencian la superación.",
+    "imagenKey": "noticia4",
     "contenido": [
       {
         "tipo": "parrafo",
-        "texto": "Nuestra <strong>propuesta multilingüe</strong> combina la sólida formación oficial en español con el <strong>aprendizaje estructurado de varios idiomas</strong>, preparando a los alumnos con herramientas globales de comunicación para un mundo interconectado."
+        "texto": "A través de desafíos académicos, olimpiadas y torneos, promovemos la participación de nuestros estudiantes en <strong>competencias escolares</strong> que potencian el esfuerzo, el <strong>trabajo en equipo</strong> y la superación personal."
       },
       {
         "tipo": "parrafo",
-        "texto": "Fomentamos la fluidez oral y la comprensión intercultural desde temprana edad, integrando recursos tecnológicos y metodologías lúdicas adaptadas a cada nivel."
+        "texto": "Cada certamen representa una oportunidad única para medir capacidades, aprender a gestionar la concentración bajo presión y compartir experiencias con pares de otras instituciones."
       },
       {
         "tipo": "imagen",
         "url": "extra4",
-        "caption": "Sede de la Asociación Argentina de Cultura Inglesa"
+        "caption": "Stand del proyecto Sky-Search en la Feria ACTE 2026."
       },
       {
         "tipo": "parrafo",
-        "texto": "De esta forma, abrimos puertas hacia un futuro sin fronteras, dotando a los estudiantes de <strong>competencias clave</strong> altamente valoradas en el ámbito académico y laboral contemporáneo."
+        "texto": "Celebramos cada logro colectivo e individual, impulsando a los jóvenes a <strong>confiar en su potencial</strong> y a seguir preparándose con entusiasmo para futuros desafíos."
       }
     ]
   },
@@ -112,12 +112,12 @@
     "titulo": "Orgullo Santa Ana",
     "tema": "Logros de nuestros alumnos",
     "fecha": "Viernes, 28 de agosto de 2026",
-    "resumen": "Nuestra alumna de 5°. año Isis Famularo lanza su libro “La prueba de que fui poema”",
+    "resumen": "Nuestra alumna de 5° año Isis Famularo lanza su libro “La prueba de que fui poema”",
     "imagenKey": "noticia5",
     "contenido": [
       {
         "tipo": "parrafo",
-        "texto": "Celebramos con enorme alegría a <strong>Isis Famularo</strong>, alumna de 5.º año del Instituto Santa Ana, quien acaba de lanzar su libro <strong>“La prueba de que fui poema”</strong>. Este logro refleja no solo su talento y sensibilidad, sino también un profundo proceso de búsqueda, crecimiento y expresión personal a través de la escritura."
+        "texto": "Celebramos con enorme alegría a <strong>Isis Famularo</strong>, alumna de 5º año del Instituto Santa Ana, quien acaba de lanzar su libro <strong>“La prueba de que fui poema”</strong>. Este logro refleja no solo su talento y sensibilidad, sino también un profundo proceso de búsqueda, crecimiento y expresión personal a través de la escritura."
       },
       {
         "tipo": "parrafo",
@@ -138,7 +138,7 @@
     "id": 6,
     "titulo": "Santa Ana Corre 2026",
     "tema": "Eventos y actividades",
-    "fecha": "Lunes, 1 de agosto de 2026",
+    "fecha": "Lunes, 31 de agosto de 2026",
     "resumen": "Nos preparamos para la edición 2026 de nuestra tradicional maratón.",
     "imagenKey": "noticia6",
     "contenido": [
@@ -160,5 +160,32 @@
         "texto": "Y este septiembre de 2026 volvemos a encontrarnos para celebrar la 10ª edición de una carrera que ya es parte de nuestra identidad."
       }
     ]
-  }
+  },
+{
+  "id": 7,
+  "titulo": "Charlas y Visitas Profesionales",
+  "tema": "Eventos y actividades",
+  "fecha": "Miercoles, 2 de septiembre de 2026",
+  "imagenKey": "noticia7",
+  "resumen": "Especialistas y profesionales comparten sus experiencias con nuestros estudiantes.",
+  "contenido": [
+    {
+      "tipo": "parrafo",
+      "texto": "En el marco de nuestro programa de orientación vocacional y académica, recibimos a destacados <strong>profesionales, especialistas y exalumnos</strong> que vienen a compartir su trayectoria con los estudiantes."
+    },
+    {
+      "tipo": "parrafo",
+      "texto": "A través de conferencias interactivas y visitas técnicas, los chicos tienen la oportunidad de conocer de cerca el campo laboral, despejar dudas y <strong>conectar el aprendizaje del aula con los desafíos del mundo real.</strong>"
+    },
+    {
+      "tipo": "imagen",
+      "url": "extra7",
+      "caption": "Estudiantes participando en la charla profesional en el auditorio del colegio."
+    },
+    {
+      "tipo": "parrafo",
+      "texto": "Agradecemos a cada uno de los disertantes por inspirar a nuestras futuras generaciones y enriquecer el proyecto educativo institucional."
+    }
+  ]
+}
 ]

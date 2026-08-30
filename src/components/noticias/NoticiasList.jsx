@@ -9,6 +9,7 @@ import Noticia3Img from '../assets/images/landing/noticias/noticia-3.png';
 import Noticia4Img from '../assets/images/landing/noticias/noticia-4.png';
 import Noticia5Img from '../assets/images/landing/noticias/noticia-5.jpg';
 import Noticia6Img from '../assets/images/landing/noticias/noticia-6.jpg';
+import Noticia7Img from '../assets/images/landing/noticias/noticia-7.jpg';
 
 const imagenesMap = {
   noticia1: Noticia1Img,
@@ -17,6 +18,7 @@ const imagenesMap = {
   noticia4: Noticia4Img,
   noticia5: Noticia5Img,
   noticia6: Noticia6Img,
+  noticia7: Noticia7Img,
 };
 
 const crearSlug = (texto) => {
