@@ -101,13 +101,13 @@ const SLIDES = [
     image: Carrusel2,
     titulo: 'Aprender explorando',
     subtitulo: 'Transformamos cada destino en conocimiento real e inolvidable',
-    link: '#link2',
+    link: '/noticias/salidas-educativas',
   },
   {
     image: Carrusel3,
     titulo: 'Competencias escolares',
     subtitulo: 'Fomentamos el trabajo en equipo, la disciplina y el respeto dentro y fuera de la cancha.',
-    link: '#link3',
+    link: '/noticias/competencias-escolares',
   },
   {
     image: Carrusel4,
@@ -119,7 +119,7 @@ const SLIDES = [
     image: Carrusel5,
     titulo: 'Pasantías y prácticas profesionales',
     subtitulo: 'Primeras experiencias laborales que conectan a los estudiantes con el mundo del trabajo',
-    link: '#link5',
+    link: '/convenios',
   },
 ];
 
@@ -387,7 +387,7 @@ const Landing = () => {
                   <div className="nivel-icon-circle">
                     {nivel.icon}
                   </div>
-                  <h3 className="nivel-title">{nivel.titulo}</h3>
+                  <h3 id="futuro" className="nivel-title">{nivel.titulo}</h3>
                 </div>
               </a>
             ))}
