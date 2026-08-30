@@ -10,6 +10,7 @@ import Contacto from "./components/contacto/Contacto.jsx";
 import Nosotros from "./components/nosotros/Nosotros.jsx";
 import Inicial from "./components/niveles/inicial/Inicial.jsx";
 import Primario from "./components/niveles/primario/Primario.jsx";
+import Secundario from "./components/niveles/secundario/Secundario.jsx";
 import Terciario from "./components/niveles/terciario/Terciario.jsx";
 
 import Maternal from "./components/niveles/maternal/Maternal.jsx";
@@ -33,6 +34,7 @@ function App() {
         <Route path="/maternal" element={<Maternal />} />
         <Route path="/inicial" element={<Inicial />} />
         <Route path="/primario" element={<Primario />} />
+        <Route path="/secundario" element={<Secundario />} />
         <Route path="/terciario" element={<Terciario />} />
 
       </Routes>
