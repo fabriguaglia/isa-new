@@ -133,5 +133,32 @@
         "texto": "Nos enorgullece acompañar trayectorias como la suya, en las que el compromiso, la creatividad y la <strong>formación integral</strong> se convierten en proyectos reales."
       }
     ]
+  },
+  {
+    "id": 6,
+    "titulo": "Santa Ana Corre 2026",
+    "tema": "Eventos y actividades",
+    "fecha": "Lunes, 1 de agosto de 2026",
+    "resumen": "Nos preparamos para la edición 2026 de nuestra tradicional maratón.",
+    "imagenKey": "noticia6",
+    "contenido": [
+      {
+        "tipo": "parrafo",
+        "texto": "Año tras año, familias, alumnos, exalumnos, docentes y amigos se encuentran en un mismo lugar con un mismo objetivo: <strong>compartir, disfrutar y ser parte de algo más grande.</strong>"
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "Hoy recorremos algunos de los momentos que hicieron del Santa Ana Corre un clásico de nuestra comunidad. <strong>Fotos, sonrisas, esfuerzo, abrazos y recuerdos que siguen marcando el camino.</strong>"
+      },
+      {
+        "tipo": "imagen",
+        "url": "extra6",
+        "caption": "Flyer de Santa Ana Corre 2026."
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "Y este septiembre de 2026 volvemos a encontrarnos para celebrar la 10ª edición de una carrera que ya es parte de nuestra identidad."
+      }
+    ]
   }
 ]

@@ -38,6 +38,8 @@ import Noticia2 from '../assets/images/landing/noticias/noticia-2.png';
 import Noticia3 from '../assets/images/landing/noticias/noticia-3.png';
 import Noticia4 from '../assets/images/landing/noticias/noticia-4.png';
 import Noticia5 from '../assets/images/landing/noticias/noticia-5.jpg';
+import Noticia6 from '../assets/images/landing/noticias/noticia-6.jpg';
+
 
 // ==========================================
 // Imágenes y descripciones para Convenios
@@ -74,6 +76,7 @@ const imagenesNoticiasMap = {
   noticia3: Noticia3,
   noticia4: Noticia4,
   noticia5: Noticia5,
+  noticia6: Noticia6,
 };
 
 // Función auxiliar para generar slugs limpios para las URLs de noticias
