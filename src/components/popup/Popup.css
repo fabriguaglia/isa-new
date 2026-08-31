@@ -18,10 +18,8 @@
 
 .popup-content {
   position: relative;
-  /* Ancho masivo en PC para que ocupe gran parte de la pantalla */
-  max-width: 1100px; 
-  width: 95%;
-  background: transparent;
+  width: max-content; /* Se ajusta exactamente al tamaño de la imagen */
+  max-width: 95vw;    /* Evita que se salga de la pantalla en PC */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,22 +27,21 @@
 }
 
 .popup-image-container {
-  width: 100%;
   border-radius: 16px;
-  /* Quitamos el overflow hidden de aquí para que la cruz no quede atrapada */
-  background-color: #ffffff;
   display: flex;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
 }
 
+.popup-picture {
+  display: flex;
+  overflow: hidden; /* Mantiene los bordes redondeados */
+}
+
 .popup-img {
-  width: 100%;
-  height: auto;
-  /* Altura máxima generosa para pantallas de PC grandes */
-  max-height: 90vh; 
-  object-fit: contain;
+  width: auto; /* Permite que el ancho se adapte a la altura real */
+  max-width: 100%;
+  max-height: 85vh; /* O la altura máxima deseada en pantalla */
   display: block;
-  border-radius: 16px;
 }
 
 /* Cruz de cierre rediseñada, grande y garantizada para verse */
