@@ -73,7 +73,7 @@ const NivelSecundario = () => {
                   <img src={Pilar3} alt="Tecnología y Idiomas" />
                 </div>
                 <div className="secundario-pilar-content">
-                  <h4>Tecnología y Idiomas</h4>
+                  <h4>Tecnología e Idiomas</h4>
                   <p>Certificaciones, lenguajes informáticos avanzados e idiomas extranjeros intensivos.</p>
                 </div>
               </div>
