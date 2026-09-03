@@ -2,17 +2,17 @@ import React from 'react';
 import './Nosotros.css';
 
 // Importación de imágenes
-import HeroBg from '../assets/images/nosotros/banner-sobre.png';
+import HeroBg from '../assets/images/nosotros/banner-sobre.webp';
 
 // Imágenes de la galería histórica
-import Historia1 from '../assets/images/nosotros/nosotros-1.jpg';
-import Historia2 from '../assets/images/nosotros/nosotros-2.jpg';
-import Historia3 from '../assets/images/nosotros/nosotros-3.jpg';
+import Historia1 from '../assets/images/nosotros/nosotros-1.webp';
+import Historia2 from '../assets/images/nosotros/nosotros-2.webp';
+import Historia3 from '../assets/images/nosotros/nosotros-3.webp';
 
 // Imágenes de la sección 45 Años
-import PatternBg from '../assets/images/nosotros/sobre-bg.png';
-import FundadoresImg from '../assets/images/nosotros/sobre-1.png';
-import Logo45Años from '../assets/images/nosotros/45años.png';
+import PatternBg from '../assets/images/nosotros/sobre-bg.webp';
+import FundadoresImg from '../assets/images/nosotros/sobre-1.webp';
+import Logo45Años from '../assets/images/nosotros/45años.webp';
 
 const Nosotros = () => {
   return (

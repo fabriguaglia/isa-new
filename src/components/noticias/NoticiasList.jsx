@@ -3,13 +3,13 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import noticiasData from '../../data/noticias.json';
 import './NoticiasList.css';
 
-import Noticia1Img from '../assets/images/landing/noticias/noticia-1.png';
-import Noticia2Img from '../assets/images/landing/noticias/noticia-2.png';
-import Noticia3Img from '../assets/images/landing/noticias/noticia-3.png';
-import Noticia4Img from '../assets/images/landing/noticias/noticia-4.png';
-import Noticia5Img from '../assets/images/landing/noticias/noticia-5.jpg';
-import Noticia6Img from '../assets/images/landing/noticias/noticia-6.jpg';
-import Noticia7Img from '../assets/images/landing/noticias/noticia-7.jpg';
+import Noticia1Img from '../assets/images/landing/noticias/noticia-1.webp';
+import Noticia2Img from '../assets/images/landing/noticias/noticia-2.webp';
+import Noticia3Img from '../assets/images/landing/noticias/noticia-3.webp';
+import Noticia4Img from '../assets/images/landing/noticias/noticia-4.webp';
+import Noticia5Img from '../assets/images/landing/noticias/noticia-5.webp';
+import Noticia6Img from '../assets/images/landing/noticias/noticia-6.webp';
+import Noticia7Img from '../assets/images/landing/noticias/noticia-7.webp';
 
 const imagenesMap = {
   noticia1: Noticia1Img,

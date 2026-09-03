@@ -2,16 +2,16 @@ import React from 'react';
 import './Inicial.css';
 
 // Reutilizamos las mismas imágenes y rutas de maternal
-import HeroInicialBg from '../../assets/images/maternal/banner-maternal.jpg'; 
+import HeroInicialBg from '../../assets/images/inicial/banner-inicial.webp'; 
 
 // Imágenes para las tarjetas de pilares/galería
-import Pilar1 from '../../assets/images/maternal/maternal-1.jpg';
-import Pilar2 from '../../assets/images/maternal/maternal-2.jpg';
-import Pilar3 from '../../assets/images/maternal/maternal-3.jpg';
+import Pilar1 from '../../assets/images/inicial/inicial-1.webp';
+import Pilar2 from '../../assets/images/inicial/inicial-2.webp';
+import Pilar3 from '../../assets/images/inicial/inicial-3.webp';
 
 // Imágenes de la sección de información
-import PatternBg from '../../assets/images/nosotros/sobre-bg.png'; 
-import InfoInicialImg from '../../assets/images/inicial/inicial-info.jpg';
+import PatternBg from '../../assets/images/nosotros/sobre-bg.webp'; 
+import InfoInicialImg from '../../assets/images/inicial/inicial-info.webp';
 
 const NivelInicial = () => {
   return (
@@ -31,7 +31,7 @@ const NivelInicial = () => {
                 Estimulando la creatividad, el pensamiento crítico y la socialización en un espacio dinámico y feliz.
               </p>
               {/* Botón translúcido alineado a la izquierda */}
-              <a href="/admisiones" className="inicial-btn inicial-btn-translucent mt-3">
+              <a href="/contacto" className="inicial-btn inicial-btn-translucent mt-3">
                 Admisiones
               </a>
             </div>
@@ -103,7 +103,7 @@ const NivelInicial = () => {
 
                 {/* Botón al final de la información alineado a la izquierda */}
                 <div className="inicial-cta-wrapper text-start">
-                  <a href="/admisiones" className="inicial-btn inicial-btn-solid">
+                  <a href="/contacto" className="inicial-btn inicial-btn-solid">
                     Admisiones
                   </a>
                 </div>

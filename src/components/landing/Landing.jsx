@@ -3,70 +3,70 @@ import './Landing.css';
 import Popup from '../popup/Popup.jsx';
 
 // Imágenes para el carrusel
-import Carrusel1 from '../assets/images/landing/carrusel/carrusel-1.jpg';
-import Carrusel2 from '../assets/images/landing/carrusel/carrusel-2.jpg';
-import Carrusel3 from '../assets/images/landing/carrusel/carrusel-3.jpg';
-import Carrusel4 from '../assets/images/landing/carrusel/carrusel-4.jpg';
-import Carrusel5 from '../assets/images/landing/carrusel/carrusel-5.jpg';
+import Carrusel1 from '../assets/images/landing/carrusel/carrusel-1.webp';
+import Carrusel2 from '../assets/images/landing/carrusel/carrusel-2.webp';
+import Carrusel3 from '../assets/images/landing/carrusel/carrusel-3.webp';
+import Carrusel4 from '../assets/images/landing/carrusel/carrusel-4.webp';
+import Carrusel5 from '../assets/images/landing/carrusel/carrusel-5.webp';
 
 // Logo institucional
 import AcademicaLogo from '../assets/images/landing/academica.png';
 
 // Imágenes para la galería inferior
-import Galeria1 from '../assets/images/landing/galeria/galeria-1.jpg';
-import Galeria2 from '../assets/images/landing/galeria/galeria-2.jpg';
-import Galeria3 from '../assets/images/landing/galeria/galeria-3.jpg';
+import Galeria1 from '../assets/images/landing/galeria/galeria-1.webp';
+import Galeria2 from '../assets/images/landing/galeria/galeria-2.webp';
+import Galeria3 from '../assets/images/landing/galeria/galeria-3.webp';
 
 // Imágenes para las tarjetas de niveles
-import MaternalImg from '../assets/images/landing/niveles/maternal.png';
-import InicialImg from '../assets/images/landing/niveles/inicial.png';
-import PrimarioImg from '../assets/images/landing/niveles/primario.png';
-import SecundarioImg from '../assets/images/landing/niveles/secundario.png';
-import TerciarioImg from '../assets/images/landing/niveles/terciario.png';
+import MaternalImg from '../assets/images/landing/niveles/maternal.webp';
+import InicialImg from '../assets/images/landing/niveles/inicial.webp';
+import PrimarioImg from '../assets/images/landing/niveles/primario.webp';
+import SecundarioImg from '../assets/images/landing/niveles/secundario.webp';
+import TerciarioImg from '../assets/images/landing/niveles/terciario.webp';
 
 // Imágenes para la sección tecnológica
-import TechBg from '../assets/images/landing/tech/tech-bg.png';
-import Tech1 from '../assets/images/landing/tech/tech-1.png';
-import Tech2 from '../assets/images/landing/tech/tech-2.png';
-import Tech3 from '../assets/images/landing/tech/tech-3.png';
-import CiscoLogo from '../assets/images/landing/tech/cisco-logo.png';
-import SchneiderLogo from '../assets/images/landing/tech/schneider-logo.png';
+import TechBg from '../assets/images/landing/tech/tech-bg.webp';
+import Tech1 from '../assets/images/landing/tech/tech-1.webp';
+import Tech2 from '../assets/images/landing/tech/tech-2.webp';
+import Tech3 from '../assets/images/landing/tech/tech-3.webp';
+import CiscoLogo from '../assets/images/landing/tech/cisco-logo.webp';
+import SchneiderLogo from '../assets/images/landing/tech/schneider-logo.webp';
 
 // Imágenes para la sección de Noticias / Experiencias institucionales
-import Noticia1 from '../assets/images/landing/noticias/noticia-1.png';
-import Noticia2 from '../assets/images/landing/noticias/noticia-2.png';
-import Noticia3 from '../assets/images/landing/noticias/noticia-3.png';
-import Noticia4 from '../assets/images/landing/noticias/noticia-4.png';
-import Noticia5 from '../assets/images/landing/noticias/noticia-5.jpg';
-import Noticia6 from '../assets/images/landing/noticias/noticia-6.jpg';
-import Noticia7 from '../assets/images/landing/noticias/noticia-7.jpg';
+import Noticia1 from '../assets/images/landing/noticias/noticia-1.webp';
+import Noticia2 from '../assets/images/landing/noticias/noticia-2.webp';
+import Noticia3 from '../assets/images/landing/noticias/noticia-3.webp';
+import Noticia4 from '../assets/images/landing/noticias/noticia-4.webp';
+import Noticia5 from '../assets/images/landing/noticias/noticia-5.webp';
+import Noticia6 from '../assets/images/landing/noticias/noticia-6.webp';
+import Noticia7 from '../assets/images/landing/noticias/noticia-7.webp';
 
 
 // ==========================================
 // Imágenes y descripciones para Convenios
 // ==========================================
-import ConvenioBg1 from '../assets/images/landing/convenios/bg-1.png';
-import ConvenioLogo1 from '../assets/images/landing/convenios/logo-1.png';
-import ConvenioBg2 from '../assets/images/landing/convenios/bg-2.png';
-import ConvenioLogo2 from '../assets/images/landing/convenios/logo-2.png';
-import ConvenioBg3 from '../assets/images/landing/convenios/bg-3.png';
-import ConvenioLogo3 from '../assets/images/landing/convenios/logo-3.png';
-import ConvenioBg4 from '../assets/images/landing/convenios/bg-4.png';
-import ConvenioLogo4 from '../assets/images/landing/convenios/logo-4.png';
-import ConvenioBg5 from '../assets/images/landing/convenios/bg-5.png';
-import ConvenioLogo5 from '../assets/images/landing/convenios/logo-5.png';
-import ConvenioBg6 from '../assets/images/landing/convenios/bg-6.png';
-import ConvenioLogo6 from '../assets/images/landing/convenios/logo-6.png';
-import ConvenioBg7 from '../assets/images/landing/convenios/bg-7.png';
-import ConvenioLogo7 from '../assets/images/landing/convenios/logo-7.png';
-import ConvenioBg8 from '../assets/images/landing/convenios/bg-8.png';
-import ConvenioLogo8 from '../assets/images/landing/convenios/logo-8.png';
-import ConvenioBg9 from '../assets/images/landing/convenios/bg-9.png';
-import ConvenioLogo9 from '../assets/images/landing/convenios/logo-9.png';
-import ConvenioBg10 from '../assets/images/landing/convenios/bg-21.png';
-import ConvenioLogo10 from '../assets/images/landing/convenios/logo-21.png';
-import ConvenioBg11 from '../assets/images/landing/convenios/bg-22.png';
-import ConvenioLogo11 from '../assets/images/landing/convenios/logo-22.png';
+import ConvenioBg1 from '../assets/images/landing/convenios/bg-1.webp';
+import ConvenioLogo1 from '../assets/images/landing/convenios/logo-1.webp';
+import ConvenioBg2 from '../assets/images/landing/convenios/bg-2.webp';
+import ConvenioLogo2 from '../assets/images/landing/convenios/logo-2.webp';
+import ConvenioBg3 from '../assets/images/landing/convenios/bg-3.webp';
+import ConvenioLogo3 from '../assets/images/landing/convenios/logo-3.webp';
+import ConvenioBg4 from '../assets/images/landing/convenios/bg-4.webp';
+import ConvenioLogo4 from '../assets/images/landing/convenios/logo-4.webp';
+import ConvenioBg5 from '../assets/images/landing/convenios/bg-5.webp';
+import ConvenioLogo5 from '../assets/images/landing/convenios/logo-5.webp';
+import ConvenioBg6 from '../assets/images/landing/convenios/bg-6.webp';
+import ConvenioLogo6 from '../assets/images/landing/convenios/logo-6.webp';
+import ConvenioBg7 from '../assets/images/landing/convenios/bg-7.webp';
+import ConvenioLogo7 from '../assets/images/landing/convenios/logo-7.webp';
+import ConvenioBg8 from '../assets/images/landing/convenios/bg-8.webp';
+import ConvenioLogo8 from '../assets/images/landing/convenios/logo-8.webp';
+import ConvenioBg9 from '../assets/images/landing/convenios/bg-9.webp';
+import ConvenioLogo9 from '../assets/images/landing/convenios/logo-9.webp';
+import ConvenioBg10 from '../assets/images/landing/convenios/bg-21.webp';
+import ConvenioLogo10 from '../assets/images/landing/convenios/logo-21.webp';
+import ConvenioBg11 from '../assets/images/landing/convenios/bg-22.webp';
+import ConvenioLogo11 from '../assets/images/landing/convenios/logo-22.webp';
 
 import noticiasData from '../../data/noticias.json';
 

@@ -56,6 +56,11 @@ const Header = () => {
         <nav className={`header-nav ${isMenuOpen ? 'is-open' : ''}`}>
           <ul className="nav-list">
             <li className="nav-item">
+              <a href="/" className="nav-link" onClick={handleLinkClick}>
+                Inicio
+              </a>
+            </li>
+            <li className="nav-item">
               <a href="nosotros" className="nav-link" onClick={handleLinkClick}>
                 Sobre nosotros
               </a>
@@ -111,7 +116,7 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="/admisiones" className="nav-link nav-link-highlight" onClick={handleLinkClick}>
+              <a href="/contacto" className="nav-link nav-link-highlight" onClick={handleLinkClick}>
                 Admisiones
               </a>
             </li>

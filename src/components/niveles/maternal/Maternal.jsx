@@ -2,16 +2,16 @@ import React from 'react';
 import './Maternal.css';
 
 // Importación de imágenes (ajusta las rutas y nombres según tus assets)
-import HeroMaternalBg from '../../assets/images/maternal/banner-maternal.jpg'; 
+import HeroMaternalBg from '../../assets/images/maternal/banner-maternal.webp'; 
 
 // Imágenes para las tarjetas de pilares/galería
-import Pilar1 from '../../assets/images/maternal/maternal-1.jpg';
-import Pilar2 from '../../assets/images/maternal/maternal-2.jpg';
-import Pilar3 from '../../assets/images/maternal/maternal-3.jpg';
+import Pilar1 from '../../assets/images/maternal/maternal-1.webp';
+import Pilar2 from '../../assets/images/maternal/maternal-2.webp';
+import Pilar3 from '../../assets/images/maternal/maternal-3.webp';
 
 // Imágenes de la sección de información
-import PatternBg from '../../assets/images/nosotros/sobre-bg.png'; 
-import InfoMaternalImg from '../../assets/images/maternal/maternal-info.png';
+import PatternBg from '../../assets/images/nosotros/sobre-bg.webp'; 
+import InfoMaternalImg from '../../assets/images/maternal/maternal-info.webp';
 
 const NivelMaternal = () => {
   return (
@@ -31,7 +31,7 @@ const NivelMaternal = () => {
                 El primer paso en el viaje del aprendizaje, en un entorno seguro, cálido y lleno de amor.
               </p>
               {/* Botón translúcido alineado a la izquierda */}
-              <a href="/admisiones" className="maternal-btn maternal-btn-translucent mt-3">
+              <a href="/contacto" className="maternal-btn maternal-btn-translucent mt-3">
                 Admisiones
               </a>
             </div>
@@ -103,7 +103,7 @@ const NivelMaternal = () => {
 
                 {/* Botón al final de la información alineado a la izquierda */}
                 <div className="maternal-cta-wrapper text-start">
-                  <a href="/admisiones" className="maternal-btn maternal-btn-solid">
+                  <a href="/contacto" className="maternal-btn maternal-btn-solid">
                     Admisiones
                   </a>
                 </div>

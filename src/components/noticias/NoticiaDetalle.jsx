@@ -4,22 +4,22 @@ import { useParams, Link } from 'react-router-dom';
 import noticiasData from '../../data/noticias.json';
 
 // Imágenes principales (portada / tarjeta)
-import Noticia1Img from '../assets/images/landing/noticias/noticia-1.png';
-import Noticia2Img from '../assets/images/landing/noticias/noticia-2.png';
-import Noticia3Img from '../assets/images/landing/noticias/noticia-3.png';
-import Noticia4Img from '../assets/images/landing/noticias/noticia-4.png';
-import Noticia5Img from '../assets/images/landing/noticias/noticia-5.jpg';
-import Noticia6Img from '../assets/images/landing/noticias/noticia-6.jpg';
-import Noticia7Img from '../assets/images/landing/noticias/noticia-7.jpg';
+import Noticia1Img from '../assets/images/landing/noticias/noticia-1.webp';
+import Noticia2Img from '../assets/images/landing/noticias/noticia-2.webp';
+import Noticia3Img from '../assets/images/landing/noticias/noticia-3.webp';
+import Noticia4Img from '../assets/images/landing/noticias/noticia-4.webp';
+import Noticia5Img from '../assets/images/landing/noticias/noticia-5.webp';
+import Noticia6Img from '../assets/images/landing/noticias/noticia-6.webp';
+import Noticia7Img from '../assets/images/landing/noticias/noticia-7.webp';
 
 // Imágenes extra para el interior del texto
-import Extra1Img from '../assets/images/landing/noticias/extra-1.png';
-import Extra2Img from '../assets/images/landing/noticias/extra-2.png';
-import Extra3Img from '../assets/images/landing/noticias/extra-3.png';
-import Extra4Img from '../assets/images/landing/noticias/extra-4.png';
-import Extra5Img from '../assets/images/landing/noticias/extra-5.jpg';
-import Extra6Img from '../assets/images/landing/noticias/extra-6.jpg';
-import Extra7Img from '../assets/images/landing/noticias/extra-7.jpg';
+import Extra1Img from '../assets/images/landing/noticias/extra-1.webp';
+import Extra2Img from '../assets/images/landing/noticias/extra-2.webp';
+import Extra3Img from '../assets/images/landing/noticias/extra-3.webp';
+import Extra4Img from '../assets/images/landing/noticias/extra-4.webp';
+import Extra5Img from '../assets/images/landing/noticias/extra-5.webp';
+import Extra6Img from '../assets/images/landing/noticias/extra-6.webp';
+import Extra7Img from '../assets/images/landing/noticias/extra-7.webp';
 
 const imagenesMap = {
   noticia1: Noticia1Img,

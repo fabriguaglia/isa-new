@@ -2,16 +2,16 @@ import React from 'react';
 import './Terciario.css';
 
 // Importación de imágenes para Nivel Terciario
-import HeroTerciarioBg from '../../assets/images/terciario/banner-terciario.jpg'; 
+import HeroTerciarioBg from '../../assets/images/terciario/banner-terciario.webp'; 
 
 // Imágenes para las tarjetas de pilares/galería
-import Pilar1 from '../../assets/images/terciario/terciario-1.jpg';
-import Pilar2 from '../../assets/images/terciario/terciario-2.jpg';
-import Pilar3 from '../../assets/images/terciario/terciario-3.jpg';
+import Pilar1 from '../../assets/images/terciario/terciario-1.webp';
+import Pilar2 from '../../assets/images/terciario/terciario-2.webp';
+import Pilar3 from '../../assets/images/terciario/terciario-3.webp';
 
 // Imágenes de la sección de información
-import PatternBg from '../../assets/images/nosotros/sobre-bg.png'; 
-import InfoTerciarioImg from '../../assets/images/terciario/terciario-info.png';
+import PatternBg from '../../assets/images/nosotros/sobre-bg.webp'; 
+import InfoTerciarioImg from '../../assets/images/terciario/terciario-info.webp';
 
 const NivelTerciario = () => {
   return (
@@ -31,7 +31,7 @@ const NivelTerciario = () => {
                 Carreras superiores y tecnicaturas orientadas a la inserción laboral inmediata y la especialización profesional.
               </p>
               {/* Botón translúcido alineado a la izquierda */}
-              <a href="/admisiones" className="terciario-btn terciario-btn-translucent mt-3">
+              <a href="/contacto" className="terciario-btn terciario-btn-translucent mt-3">
                 Admisiones
               </a>
             </div>
@@ -103,7 +103,7 @@ const NivelTerciario = () => {
 
                 {/* Botón al final de la información alineado a la izquierda */}
                 <div className="terciario-cta-wrapper text-start">
-                  <a href="/admisiones" className="terciario-btn terciario-btn-solid">
+                  <a href="/contacto" className="terciario-btn terciario-btn-solid">
                     Admisiones
                   </a>
                 </div>

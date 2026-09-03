@@ -2,20 +2,20 @@ import React from 'react';
 import './Secundario.css';
 
 // Importación de imágenes generales para Nivel Secundario
-import HeroSecundarioBg from '../../assets/images/secundario/banner-secundario.jpg'; 
-import Pilar1 from '../../assets/images/secundario/secundario-1.jpg';
-import Pilar2 from '../../assets/images/secundario/secundario-2.jpg';
-import Pilar3 from '../../assets/images/secundario/secundario-3.jpg';
-import PatternBg from '../../assets/images/nosotros/sobre-bg.png'; 
-import InfoSecundarioImg from '../../assets/images/secundario/secundario-info.jpg';
+import HeroSecundarioBg from '../../assets/images/secundario/banner-secundario.webp'; 
+import Pilar1 from '../../assets/images/secundario/secundario-1.webp';
+import Pilar2 from '../../assets/images/secundario/secundario-2.webp';
+import Pilar3 from '../../assets/images/secundario/secundario-3.webp';
+import PatternBg from '../../assets/images/nosotros/sobre-bg.webp'; 
+import InfoSecundarioImg from '../../assets/images/secundario/secundario-info.webp';
 
 // Imágenes específicas para las 3 modalidades (2 por cada una)
-import ModProg1 from '../../assets/images/secundario/mod-prog-1.jpg';
-import ModProg2 from '../../assets/images/secundario/mod-prog-2.jpg';
-import ModCom1 from '../../assets/images/secundario/mod-com-1.png';
-import ModCom2 from '../../assets/images/secundario/mod-com-2.jpg';
-import ModTur1 from '../../assets/images/secundario/mod-tur-1.jpg';
-import ModTur2 from '../../assets/images/secundario/mod-tur-2.jpg';
+import ModProg1 from '../../assets/images/secundario/mod-prog-1.webp';
+import ModProg2 from '../../assets/images/secundario/mod-prog-2.webp';
+import ModCom1 from '../../assets/images/secundario/mod-com-1.webp';
+import ModCom2 from '../../assets/images/secundario/mod-com-2.webp';
+import ModTur1 from '../../assets/images/secundario/mod-tur-1.webp';
+import ModTur2 from '../../assets/images/secundario/mod-tur-2.webp';
 
 const NivelSecundario = () => {
   return (
@@ -35,7 +35,7 @@ const NivelSecundario = () => {
                 Preparando a los jóvenes para la educación superior y el mundo profesional con trayectorias orientadas.
               </p>
               {/* Botón translúcido alineado a la izquierda */}
-              <a href="/admisiones" className="secundario-btn secundario-btn-translucent mt-3">
+              <a href="/contacto" className="secundario-btn secundario-btn-translucent mt-3">
                 Admisiones
               </a>
             </div>
@@ -106,7 +106,7 @@ const NivelSecundario = () => {
                   </div>
                   <div className="col-12 col-lg-7 p-4 p-md-5">
                     <div className="secundario-mod-content text-start">
-                      <span className="secundario-badge">4° a 7° Año</span>
+                      <span className="secundario-badge">1° a 7° Año</span>
                       <h3 className="secundario-mod-title mt-2">Tecnicatura en Programación</h3>
                       <p className="secundario-text-desc mt-3">
                         Una formación técnica de vanguardia orientada al desarrollo de software, infraestructura y seguridad informática para dar respuesta al mercado tecnológico actual.
@@ -135,7 +135,7 @@ const NivelSecundario = () => {
                   </div>
                   <div className="col-12 col-lg-7 order-lg-1 p-4 p-md-5">
                     <div className="secundario-mod-content text-start">
-                      <span className="secundario-badge">4° a 6° Año</span>
+                      <span className="secundario-badge">1° a 6° Año</span>
                       <h3 className="secundario-mod-title mt-2">Bachillerato en Comunicaciones</h3>
                       <p className="secundario-text-desc mt-3">
                         Enfoque integral sobre los medios masivos, la producción de contenidos, la investigación periodística y la comunicación institucional digital.
@@ -208,7 +208,7 @@ const NivelSecundario = () => {
 
                 {/* Botón al final de la información alineado a la izquierda */}
                 <div className="secundario-cta-wrapper text-start">
-                  <a href="/admisiones" className="secundario-btn secundario-btn-solid">
+                  <a href="/contacto" className="secundario-btn secundario-btn-solid">
                     Admisiones
                   </a>
                 </div>

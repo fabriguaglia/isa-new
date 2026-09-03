@@ -158,7 +158,7 @@ const Footer = () => {
               <h4 className="footer-heading">Institucional</h4>
               <ul className="footer-links-list">
                 <li><a href="/contacto">Contacto</a></li>
-                <li><a href="/admisiones">Admisiones</a></li>
+                <li><a href="/contacto">Admisiones</a></li>
                 <li><a href="/convenios">Convenios</a></li>
                 <li><a href="/noticias">Noticias y Novedades</a></li>
               </ul>

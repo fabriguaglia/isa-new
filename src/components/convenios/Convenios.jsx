@@ -4,28 +4,28 @@ import './Convenios.css';
 // ==========================================
 // Imágenes y descripciones para Convenios
 // ==========================================
-import ConvenioBg1 from '../assets/images/landing/convenios/bg-1.png';
-import ConvenioLogo1 from '../assets/images/landing/convenios/logo-1.png';
-import ConvenioBg2 from '../assets/images/landing/convenios/bg-2.png';
-import ConvenioLogo2 from '../assets/images/landing/convenios/logo-2.png';
-import ConvenioBg3 from '../assets/images/landing/convenios/bg-3.png';
-import ConvenioLogo3 from '../assets/images/landing/convenios/logo-3.png';
-import ConvenioBg4 from '../assets/images/landing/convenios/bg-4.png';
-import ConvenioLogo4 from '../assets/images/landing/convenios/logo-4.png';
-import ConvenioBg5 from '../assets/images/landing/convenios/bg-5.png';
-import ConvenioLogo5 from '../assets/images/landing/convenios/logo-5.png';
-import ConvenioBg6 from '../assets/images/landing/convenios/bg-6.png';
-import ConvenioLogo6 from '../assets/images/landing/convenios/logo-6.png';
-import ConvenioBg7 from '../assets/images/landing/convenios/bg-7.png';
-import ConvenioLogo7 from '../assets/images/landing/convenios/logo-7.png';
-import ConvenioBg8 from '../assets/images/landing/convenios/bg-8.png';
-import ConvenioLogo8 from '../assets/images/landing/convenios/logo-8.png';
-import ConvenioBg9 from '../assets/images/landing/convenios/bg-9.png';
-import ConvenioLogo9 from '../assets/images/landing/convenios/logo-9.png';
-import ConvenioBg10 from '../assets/images/landing/convenios/bg-21.png';
-import ConvenioLogo10 from '../assets/images/landing/convenios/logo-21.png';
-import ConvenioBg11 from '../assets/images/landing/convenios/bg-22.png';
-import ConvenioLogo11 from '../assets/images/landing/convenios/logo-22.png';
+import ConvenioBg1 from '../assets/images/landing/convenios/bg-1.webp';
+import ConvenioLogo1 from '../assets/images/landing/convenios/logo-1.webp';
+import ConvenioBg2 from '../assets/images/landing/convenios/bg-2.webp';
+import ConvenioLogo2 from '../assets/images/landing/convenios/logo-2.webp';
+import ConvenioBg3 from '../assets/images/landing/convenios/bg-3.webp';
+import ConvenioLogo3 from '../assets/images/landing/convenios/logo-3.webp';
+import ConvenioBg4 from '../assets/images/landing/convenios/bg-4.webp';
+import ConvenioLogo4 from '../assets/images/landing/convenios/logo-4.webp';
+import ConvenioBg5 from '../assets/images/landing/convenios/bg-5.webp';
+import ConvenioLogo5 from '../assets/images/landing/convenios/logo-5.webp';
+import ConvenioBg6 from '../assets/images/landing/convenios/bg-6.webp';
+import ConvenioLogo6 from '../assets/images/landing/convenios/logo-6.webp';
+import ConvenioBg7 from '../assets/images/landing/convenios/bg-7.webp';
+import ConvenioLogo7 from '../assets/images/landing/convenios/logo-7.webp';
+import ConvenioBg8 from '../assets/images/landing/convenios/bg-8.webp';
+import ConvenioLogo8 from '../assets/images/landing/convenios/logo-8.webp';
+import ConvenioBg9 from '../assets/images/landing/convenios/bg-9.webp';
+import ConvenioLogo9 from '../assets/images/landing/convenios/logo-9.webp';
+import ConvenioBg10 from '../assets/images/landing/convenios/bg-21.webp';
+import ConvenioLogo10 from '../assets/images/landing/convenios/logo-21.webp';
+import ConvenioBg11 from '../assets/images/landing/convenios/bg-22.webp';
+import ConvenioLogo11 from '../assets/images/landing/convenios/logo-22.webp';
 
 const LISTA_CONVENIOS = [
   { 
