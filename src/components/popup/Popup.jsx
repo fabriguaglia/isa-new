@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './Popup.css';
 
 // Importa aquí tus dos imágenes distintas
-import ImagenDesktop from '../assets/images/popup.png'; // Imagen para PC / Tablets grandes
-import ImagenMobile from '../assets/images/popup2.png';  // Imagen exclusiva para Celulares
+import ImagenDesktop from '../assets/images/popup.webp'; // Imagen para PC / Tablets grandes
+import ImagenMobile from '../assets/images/popup2.webp';  // Imagen exclusiva para Celulares
 
 const PopupAnuncio = () => {
   const [isOpen, setIsOpen] = useState(false);

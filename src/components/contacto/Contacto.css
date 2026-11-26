@@ -44,3 +44,9 @@
 .text-primary-custom {
   color: #ffffff;
 }
+/* Cambio de imagen para pantallas de teléfonos (768px o menos) */
+@media (max-width: 768px) {
+  .seccion-contacto {
+    background-image: url('../assets/images/contacto/contacto-bg-2.webp');
+  }
+}

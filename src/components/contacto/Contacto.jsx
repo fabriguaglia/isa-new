@@ -26,7 +26,7 @@ const Contacto = () => {
           {/* Tarjeta de WhatsApp Clickeable */}
           <div className="col-md-4">
             <a 
-              href="https://wa.me/5491176523596" 
+              href="https://wa.me/5491155161324" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-decoration-none h-100 d-block"
@@ -48,7 +48,7 @@ const Contacto = () => {
 
           {/* Tarjeta de Teléfono Clickeable */}
           <div className="col-md-4">
-            <a href="tel:1176523596" className="text-decoration-none h-100 d-block">
+            <a href="tel:1155161324" className="text-decoration-none h-100 d-block">
               <div className="card h-100 border-0 shadow-sm p-4 text-center rounded-3 tarjeta-contacto">
                 <div className="mb-3 text-primary-custom">
                   <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -58,7 +58,7 @@ const Contacto = () => {
                 <h3 className="h5 fw-bold" style={{ color: '#ffffff' }}>Teléfono</h3>
                 <p className="text-muted small mb-3">Línea directa institucional</p>
                 <span className="fw-semibold fs-6" style={{ color: '#ffffff' }}>
-                  11 7652-3596
+                  11 5516-1324
                 </span>
               </div>
             </a>

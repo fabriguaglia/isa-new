@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Header.css';
-import Logo from '../assets/images/logo.png';
+import Logo from '../assets/images/logo.webp';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
